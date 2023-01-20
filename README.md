@@ -1,2 +1,1 @@
-# baonks81.github.io
-Build a jekyll blog basic in minutes with touching the command line.
+This is my personal blog.. and that's it? What else could I fill in this gap?
