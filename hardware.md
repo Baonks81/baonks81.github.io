@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: about
 title: Hardware
 permalink: /hardware/
 ---
