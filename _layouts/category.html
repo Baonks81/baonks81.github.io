@@ -1,0 +1,16 @@
+---
+layout: about
+---
+
+<h1>{{ page.name }}</h1>
+<h2>{{ page.open_source }}</h2>
+
+{{ content }}
+
+<h2>Related Posts:</h2>
+<ul>
+  {% assign filtered_posts = site.posts | where: 'category', page.short_name %}
+  {% for post in filtered_posts %}
+       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

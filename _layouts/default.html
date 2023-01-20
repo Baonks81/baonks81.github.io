@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- Head -->
+  {% include head.html %}
+
+  <body>
+
+    <!-- Navigation -->
+    {% include navigation.html %}
+
+    <!-- Header -->
+    {% include header.html %}
+        
+    <main id="main" role="main" class="container">    
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+
+            {{ content }}
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    {% include footer.html %}
+<!--
+    <!-- Bootstrap core JS -->
+    <script src={{ "assets/js/bootstrap.bundle.min.js" | relative_url }}></script>
+    <!-- Core theme JS -->
+    <script src={{ "assets/js/scripts.js" | relative_url }} ></script>
+-->
+  </body>
+</html>
