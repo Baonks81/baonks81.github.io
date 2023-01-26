@@ -31,20 +31,18 @@ layout: default
 <!-- Pagination links -->
 <div class="pagination d-flex justify-content-end mb-4">
   {% if paginator.previous_page %}
-       <a href="{{ paginator.previous_page_path }}" class="previous btn btn-primary text-uppercase">
-         Previous
-       </a>
-     {% else %}
-       <span class="previous btn btn-primary text-uppercase">Previous</span>
-     {% endif %}
-     <span class="page_number btn btn-primary text-uppercase">
-       {{ paginator.page }} of {{ paginator.total_pages }}
-     </span>
-     {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="next btn btn-primary text-uppercase">Next</a>
-     {% else %}
-          <span class="next btn btn-primary text-uppercase">Next</span>
-     {% endif %}
+       <a href="{{ paginator.previous_page_path }}" class="previous btn btn-primary text-uppercase">Previous</a>
+  {% else %}
+       <span></span>
+       <!-- <span class="previous btn btn-primary text-uppercase">Previous</span> -->
+  {% endif %}
+       <!-- <span class="page_number btn btn-primary text-uppercase">{{ paginator.page }} of {{ paginator.total_pages }}</span> -->
+  {% if paginator.next_page %}
+       <a href="{{ paginator.next_page_path }}" class="next btn btn-primary text-uppercase">Next</a>
+  {% else %}
+       <span></span>
+       <!-- <span class="next btn btn-primary text-uppercase">Next</span> -->
+  {% endif %}
 </div>
 
 <!-- Pagination code snipplet version 2
