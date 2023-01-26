@@ -33,7 +33,7 @@ layout: default
   {% if paginator.previous_page %}
        <a href="{{ paginator.previous_page_path }}" class="previous btn btn-primary text-uppercase">Previous</a>
   {% else %}
-       <span></span>
+       <span class="previous"></span>
        <!-- <span class="previous btn btn-primary text-uppercase">Previous</span> -->
   {% endif %}
   <span class="page_number"> </span>
@@ -41,7 +41,7 @@ layout: default
   {% if paginator.next_page %}
        <a href="{{ paginator.next_page_path }}" class="next btn btn-primary text-uppercase">Next</a>
   {% else %}
-       <span></span>
+       <span class="next"></span>
        <!-- <span class="next btn btn-primary text-uppercase">Next</span> -->
   {% endif %}
 </div>
