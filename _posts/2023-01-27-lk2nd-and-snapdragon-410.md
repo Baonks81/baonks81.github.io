@@ -15,4 +15,6 @@ The open-source community has created a tool similar Odin, it's running on Linux
 We had [lk2nd], bring fastboot back, and linux-panel-drivers, it's the dtbs that arise when installing lk2nd, there is the ss_dsi panel line used to display images on the gpu chipset.
 Currently only 1 model and variants are supported, need to be added more
 
+Secondary little kernel(lk2nd) → [ initramfs + vmlinuz + config + extra (/pmOS_boot partition) → rootfs + firmware + kernel modules (/pmOS_root include Phosh UI) ]
+
 [lk2nd]: https://github.com/msm8916-mainline/lk2nd
