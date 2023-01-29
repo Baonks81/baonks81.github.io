@@ -4,7 +4,7 @@ category: lk2nd
 permalink: /msm8916-redmi-2-and-samsung-galaxy-a5-duos/
 ---
 
-I wrote some lk2nd experiences at previous post. Xiaomi Redmi 2(wt88057, wt86047) and Samsung Galaxy A5 Duos (sm-a53g) implements msm8916.
+I wrote some lk2nd experiences at previous post. Xiaomi Redmi 2 (wt88047, wt86047) and Samsung Galaxy A5 Duos (sm-a53g) implements msm8916.
 <!--more-->
 Of course, I had to add dts in lk2nd for sm-a53g, wt88047 and wt86047 were there, other devs handle those. Because sm-a53g had the same architechure with sm-a5lte and sm-a5ulte.
 I found those [there]
