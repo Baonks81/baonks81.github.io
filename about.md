@@ -13,4 +13,6 @@ I'm not a programmer, but I could read flow-chart or coding. I've just used GNU/
 - I read some documents on internet, even postmarketOS, Linux mainline kenel documents
 
 ### Contact
-- Matrix: `#offtopic:postmarketos.org` (ping @baonks81:matrix.org)
+- Matrix: [`#offtopic:postmarketos.org`] (ping @baonks81:matrix.org)
+
+[`#offtopic:postmarketos.org`]: https://matrix.to/#/#offtopic:postmarketos.org
