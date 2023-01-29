@@ -31,7 +31,7 @@ layout: default
 <!-- Pagination links -->
 <div class="pagination d-flex justify-content-end mb-4">
   {% if paginator.previous_page %}
-       <a href="{{ paginator.previous_page_path }}" class="previous btn btn-primary text-uppercase">&laquo; Previous</a>
+       <a href="{{ paginator.previous_page_path }}" class="previous btn btn-primary text-uppercase justify-content-start">&lang; Previous</a>
   {% else %}
        <span class="previous"></span>
        <!-- <span class="previous btn btn-primary text-uppercase">&lsaquo; Previous</span> -->
@@ -39,7 +39,7 @@ layout: default
   <span class="page_number"> </span>
   <!-- <span class="page_number btn btn-primary text-uppercase">{{ paginator.page }} of {{ paginator.total_pages }}</span> -->
   {% if paginator.next_page %}
-       <a href="{{ paginator.next_page_path }}" class="next btn btn-primary text-uppercase">Next &rsaquo;</a>
+       <a href="{{ paginator.next_page_path }}" class="next btn btn-primary text-uppercase">Next &rang;</a>
   {% else %}
        <span class="next"></span>
        <!-- <span class="next btn btn-primary text-uppercase">Next</span> -->
