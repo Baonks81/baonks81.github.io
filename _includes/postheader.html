@@ -11,7 +11,7 @@
                - <a href="{{ category.url }}"">{{ category.name }}</a>
              {% endif %}
            </p>
-           <p>{{ site.baseurl }}{{ page.url }}</p>
+           {% include single.html posturl='{{ page.url }}' %}
         </div>
       </div>
     </div>
