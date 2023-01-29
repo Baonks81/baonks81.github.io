@@ -11,7 +11,7 @@ I found those [there]
 ```
 ...
 
-/* qcom, msm id */
+/* qcom, msm-id */
 qcom-id-msm8916 206 ← a5lte and a5ulte
 
 qcom-id-apq8016 247
