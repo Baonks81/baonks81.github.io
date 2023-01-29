@@ -6,7 +6,7 @@ permalink: /lk2nd-and-snapdragon-410/
 
 How the system booting!? Let's start, since Google created compatible hardware using the Linux kernel to run Android,
 Google has kept fastboot to re-flash the firmware if there are problems, system errors or new updates/upgrades.
-
+<!--more-->
 When the OEMs edited Android(AOSP), they only keep the Android system, they throw fastboot away and they're changing the firmware with their own softwares.
 As Samsung, they're using Kites3 like iTunes to manage their devices, user data, upgrade firmware.
 At the same time, Odin is running on Windows which reflash/update firmware.
