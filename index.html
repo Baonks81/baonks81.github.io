@@ -34,12 +34,12 @@ layout: default
        <a href="{{ paginator.previous_page_path }}" class="previous btn btn-primary text-uppercase">Previous</a>
   {% else %}
        <span class="previous"></span>
-       <!-- <span class="previous btn btn-primary text-uppercase">Previous</span> -->
+       <!-- <span class="previous btn btn-primary text-uppercase">&laquo; Previous</span> -->
   {% endif %}
   <span class="page_number"> </span>
   <!-- <span class="page_number btn btn-primary text-uppercase">{{ paginator.page }} of {{ paginator.total_pages }}</span> -->
   {% if paginator.next_page %}
-       <a href="{{ paginator.next_page_path }}" class="next btn btn-primary text-uppercase">Next</a>
+       <a href="{{ paginator.next_page_path }}" class="next btn btn-primary text-uppercase">Next &raquo;</a>
   {% else %}
        <span class="next"></span>
        <!-- <span class="next btn btn-primary text-uppercase">Next</span> -->
