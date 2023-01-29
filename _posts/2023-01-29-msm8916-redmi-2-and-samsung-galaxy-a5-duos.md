@@ -8,11 +8,22 @@ I write some lk2nd experiences at previous post. Xiaomi Redmi 2(wt88057, wt86047
 Of course, I had to add dts in lk2nd for sm-a53g, wt88047 and wt86047 were there, other devs handle those. Because sm-a53g had the same architechure with sm-a5lte and sm-a5ulte.
 I found those [there]
 
+```
+...
+
 qcom-id-msm8916 206 ← a5lte and a5ulte
+
 qcom-id-msm8016 247
+
 qcom-id-msm8216 248 ← this is a53g
+
 qcom-id-msm8116 249
+
 qcom-id-msm8616 250
+
+...
+
+```
 
 In lk2nd, it had new dts with 248 mark in [msm8216-samsung-r08.dts].
 When I finished those steps, it'll easy to install pmOS(AlpineLinux), I followed this [step] and [here]. If I could ports my devices to run GNU/Linux, you can do it.
