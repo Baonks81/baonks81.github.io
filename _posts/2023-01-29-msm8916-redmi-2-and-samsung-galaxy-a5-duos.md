@@ -31,6 +31,8 @@ When I finished those steps, it'll easy to install pmOS(AlpineLinux), I followed
 
 {% include youtube.html id='zhkdnFGy29c' %}
 
+{% include youtube.html id='H_QlNfT6G60' %}
+
 [there]: https://patchwork.ozlabs.org/project/devicetree-bindings/patch/1450371534-10923-20-git-send-email-mtitinger+renesas@baylibre.com/
 [msm8216-samsung-r08.dts]: https://github.com/msm8916-mainline/lk2nd/blob/master/dts/msm8916/msm8216-samsung-r08.dts
 [step]: https://wiki.postmarketos.org/wiki/Xiaomi_Redmi_2_(xiaomi-wt88047)
