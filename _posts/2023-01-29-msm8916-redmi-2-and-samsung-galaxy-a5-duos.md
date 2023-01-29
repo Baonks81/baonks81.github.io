@@ -11,9 +11,10 @@ I found those [there]
 ```
 ...
 
+/* qcom, msm id */
 qcom-id-msm8916 206 ← a5lte and a5ulte
 
-qcom-id-msm8016 247
+qcom-id-apq8016 247
 
 qcom-id-msm8216 248 ← this is a53g
 
