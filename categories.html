@@ -7,8 +7,10 @@ permalink: /categories/
   {% for category in site.categories %}
        <li>
          <h2><a href="{{ category.url }}">{{ category.name }}</a></h2>
+<!--
          <h3>{{ category.open_source }}</h3>
          <p>{{ category.content | markdownify }}</p>
+-->
        </li>
   {% endfor %}
 </ul>
