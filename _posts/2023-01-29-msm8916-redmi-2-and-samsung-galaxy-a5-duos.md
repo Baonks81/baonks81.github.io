@@ -29,6 +29,8 @@ qcom-id-msm8616 250
 In lk2nd, it had new dts with 248 mark in [msm8216-samsung-r08.dts].
 When I finished those steps, it'll easy to install pmOS(AlpineLinux), I followed this [step] and [here]. If I could ports my devices to run GNU/Linux, you can do it.
 
+<iframe width="560" height="315" src="https://youtube.com/shorts/zhkdnFGy29c?feature=share" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 [there]: https://patchwork.ozlabs.org/project/devicetree-bindings/patch/1450371534-10923-20-git-send-email-mtitinger+renesas@baylibre.com/
 [msm8216-samsung-r08.dts]: https://github.com/msm8916-mainline/lk2nd/blob/master/dts/msm8916/msm8216-samsung-r08.dts
 [step]: https://wiki.postmarketos.org/wiki/Xiaomi_Redmi_2_(xiaomi-wt88047)
