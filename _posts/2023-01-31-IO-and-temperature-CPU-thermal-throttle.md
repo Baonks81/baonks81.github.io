@@ -15,7 +15,7 @@ Rooting devices and using root explorer, some folder to notes
 Get sysctl.conf from android terminal and busybox apps
 The CPU frequency should set at 66% on max frequency
 
-Example: msm8916 ~ 1,2GHz per core
+Example: msm8916 ~ 1,2GHz per core.
 We used 800MHz ~ 66% on 1,2GHz
 
 If device gets overheat, we have to use temp-throttle on github.com/sepero
