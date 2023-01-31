@@ -43,6 +43,7 @@ permalink: /hardware/
 - RAM: 2GB
 - GPU: Adreno 306
 - eMMC: 16GB
+- SDcard: <working but no sdcard>
 - OS: Phosh on postmarketOS, MIUI Android 5.1.1 stock
 
 ------------------------------
@@ -52,4 +53,5 @@ permalink: /hardware/
 - RAM: 2GB
 - GPU: Adreno 306
 - eMMC: 16GB
+- SDcard: <working but no sdcard>
 - OS: Phosh on postmarketOS
