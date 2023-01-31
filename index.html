@@ -17,7 +17,11 @@ layout: default
     </article>
 
     <!-- Divider -->
-    <hr class="my-4" />
+    {% if paginator.page == paginator.total_pages %}
+         <span></span>
+    {% else %}
+         <hr class="my-4" />
+    {% endif %}
 
   {% endfor %}
 
