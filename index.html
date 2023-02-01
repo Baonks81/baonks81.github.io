@@ -28,7 +28,7 @@ layout: default
              {% endfor %}
            </a>
         </h2>
-        <p>{{ post.content | truncatewords:50 | strip_html }}</p>
+        <p>{{ post.content | truncatewords:25 | strip_html }}</p>
       </header>
       <a href="{{ post.url | relative_url  }}">READ MORE</a>
     </article>
