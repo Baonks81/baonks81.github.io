@@ -12,20 +12,22 @@ layout: default
     <article>
       <header>
         <span class="date">{{ post.date | date: "%d %b %Y" }}</span>
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <h2>
+           <a href="{{ post.url | relative_url }}">{{ post.title }}
         
-        {% assign foundImage = 0 %}
-        {% assign images = post.content | split:"<img " %}
-        {% for image in images %}
-          {% if image contains 'src' %}
-            {% if foundImage == 0 %}
-                {% assign html = image | split:"/>" | first %}
-                <img class="image-responsive" {{ html }} />
-                {% assign foundImage = 1 %}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-        
+             {% assign foundImage = 0 %}
+             {% assign images = post.content | split:"<img " %}
+             {% for image in images %}
+               {% if image contains 'src' %}
+                 {% if foundImage == 0 %}
+                   {% assign html = image | split:"/>" | first %}
+                   <img class="image-responsive" {{ html }} />
+                   {% break %}
+                 {% endif %}
+               {% endif %}
+             {% endfor %}
+           </a>
+        </h2>
         <p>{{ post.content | truncatewords:50 | strip_html }}</p>
       </header>
       <a href="{{ post.url | relative_url  }}">READ MORE</a>
