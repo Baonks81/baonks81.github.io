@@ -25,5 +25,8 @@ plugins:
   - jekyll-seo-tag
 
 paginate: 2
+paginate_path: "/page/:num"
+
+permalink: /:title/
 
 excerpt_separator: <!--more--> # global excerpt separator for the blog posts
