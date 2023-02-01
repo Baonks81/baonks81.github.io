@@ -6,7 +6,7 @@ When I was online, I saw some github.io website. I just note that but I was stil
 My journey has just begun but so many things which I learn from open-source.
 
 {% include image.html
-            img="images/jekyll.jpg"
+            img="images/jekyll.png"
             title="Transform your plain text into static websites and blogs" 
             caption="Static websites and blogs building tool" %}
 
