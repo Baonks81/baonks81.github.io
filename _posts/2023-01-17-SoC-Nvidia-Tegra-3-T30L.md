@@ -14,7 +14,8 @@ pmOS_root
 {% include image.html
             img="images/Nexus_7.jpeg"
             title="This is Nexus 7 variants"
-            caption="Nexus 7 2012 Tablet" %}
+            caption="Nexus 7 2012 Tablet" 
+            url="https://en.wikipedia.org/wiki/Nexus_7_(2012)" %}
 
 So 3D accelerate worked on Nexus 7 2012. If it works on Ubuntu, it will work on Archlinux, Fedora, and openSUSE.
 
