@@ -14,13 +14,25 @@ layout: default
         <span class="date">{{ post.date | date: "%d %b %Y" }}</span>
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         
-        <p>{{ post.content | truncatewords:25 | strip_html }}</p>
+        {% assign foundImage = 0 %}
+        {% assign images = post.content | split:"<img " %}
+        {% for image in images %}
+          {% if image contains 'src' %}
+            {% if foundImage == 0 %}
+                {% assign html = image | split:"/>" | first %}
+                <img class="image-responsive" {{ html }} />
+                {% assign foundImage = 1 %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        
+        <p>{{ post.content | truncatewords:50 | strip_html }}</p>
       </header>
       <a href="{{ post.url | relative_url  }}">READ MORE</a>
     </article>
 
     <!-- Divider -->
-    {% if paginator.page == paginator.total_pages %}
+    {% if post == site.posts.last %}
          &nbsp;
     {% else %}
          <hr class="my-4" />
@@ -62,7 +74,7 @@ $('.content').jscroll({
 </script>
 
 <script>
-// ===== Scroll to Top ==== 
+    // ===== Scroll to Top ==== 
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
@@ -75,4 +87,4 @@ $('#return-to-top').click(function() {      // When arrow is clicked
         scrollTop : 0                       // Scroll to top of body
     }, 500);
 });
-</script>
+    </script>
