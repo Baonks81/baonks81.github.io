@@ -1,7 +1,6 @@
 ---
 layout: post
 category: lk2nd
-permalink: /IO-and-temperature-CPU-thermal-throttle/
 ---
 
 This post, I share my experiences from I/O and CPU temperature, thermal zone, and CPU throttle for system stability, and device's not too hot.
