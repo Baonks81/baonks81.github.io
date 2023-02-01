@@ -20,3 +20,8 @@ git remote add origin https://github.com/...
 
 ...
 ```
+
+{% include image.html
+            img="images/Git-jekyll.jpg"
+            title="Contributed code" 
+            caption="Devs community zone" %}
