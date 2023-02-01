@@ -4,7 +4,7 @@ category: lk2nd
 ---
 
 {% include image.html
-            img="images/Python_Automation.jpg"
+            img="images/Python-Automation.jpg"
             title="Coding" 
             caption="I/O and parameters" %}
 
