@@ -36,7 +36,7 @@ In lk2nd, it had new dts with 248 mark in [msm8216-samsung-r08.dts].
 When I finished those steps, it'll easy to install pmOS(AlpineLinux), I followed this [step] and [here]. If I could ports my devices to run GNU/Linux, you can do it.
 
 {% include youtube.html id='zhkdnFGy29c' %}
-&nbsp;
+<span>&nbsp;</span>
 {% include youtube.html id='H_QlNfT6G60' %}
 
 [there]: https://patchwork.ozlabs.org/project/devicetree-bindings/patch/1450371534-10923-20-git-send-email-mtitinger+renesas@baylibre.com/
