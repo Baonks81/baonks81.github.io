@@ -18,4 +18,6 @@ The CPU frequency should set at 66% on max frequency
 Example: msm8916 ~ 1,2GHz per core.
 We used 800MHz ~ 66% on 1,2GHz
 
-If device gets overheat, we have to use temp-throttle on github.com/sepero
+If device gets overheat, we have to use temp-throttle on [github.com/sepero]
+
+[github.com/sepero]: https://github.com/Sepero/temp-throttle
