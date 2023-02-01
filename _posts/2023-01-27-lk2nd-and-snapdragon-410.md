@@ -11,6 +11,12 @@ At the same time, Odin is running on Windows which reflash/update firmware.
 Xiaomi devices had Mi firmware upgrade, which throughout Mi custom fastboot.
 The open-source community has created a tool similar Odin, it's running on GNU/Linux, and it called Heimdall (flashing lk2nd to boot partition).
 
+{% include image.html
+            img="images/Lk2nd.jpg"
+            title="Secondary little kernel" 
+            caption="lk2nd msm8916"
+            url="https://github.com/msm8916-mainline/lk2nd" %}
+
 We had [lk2nd], bring fastboot back, and linux-panel-drivers, it's the dtbs that arise when installing lk2nd, there is the ss_dsi panel line used to display images on the gpu chipset.
 Currently only 1 model and variants are supported, need to be added more
 
