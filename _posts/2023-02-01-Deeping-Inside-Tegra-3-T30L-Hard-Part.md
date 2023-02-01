@@ -21,5 +21,7 @@ Taking all I/O and sysctl.conf from LineageOS 7.1.2, suck Android Lolipop 5.1.1 
             url="https://forum.xda-developers.com/t/linux-on-the-nexus-7-2012-wifi-rev-e1565-grouper-2023-edition.4323099/" %}
 
 The tablet run GNU/Linux distros fine now. I'm using to wrote my github.io blog.
-DE: i3gaps, MATE
+DE: i3gaps, MATE.
 Tools: jekyll, git, vim, nano
+&nbsp;
+{% include youtube.html id='it-JM-GkJxw' %}
