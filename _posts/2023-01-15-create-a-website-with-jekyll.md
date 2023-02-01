@@ -8,7 +8,8 @@ My journey has just begun but so many things which I learn from open-source.
 {% include image.html
             img="images/jekyll.png"
             title="Transform your plain text into static websites and blogs" 
-            caption="Static websites and blogs building tool" %}
+            caption="Static websites and blogs building tool"
+            url="https://jekyllrb.com/docs/step-by-step/01-setup" %}
 
 At the beginning, I start bought 1 Nexus 7 2012 16GB from my friend in 2018. But it's still slow at that time.
 I didn't optimize it, especial Android. I installed Ubuntu 13.04 Raring Ringtail on it, but it's still unsuable.
