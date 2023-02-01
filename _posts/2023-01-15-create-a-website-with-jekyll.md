@@ -5,6 +5,11 @@ category: jekyll
 When I was online, I saw some github.io website. I just note that but I was still curious how to create webpage. I found jekyll, a tool to create static web, so I used it for my blog.
 My journey has just begun but so many things which I learn from open-source.
 
+{% include image.html
+            img="images/jekyll.jpg"
+            title="Transform your plain text into static websites and blogs" 
+            caption="Static websites and blogs building tool" %}
+
 At the beginning, I start bought 1 Nexus 7 2012 16GB from my friend in 2018. But it's still slow at that time.
 I didn't optimize it, especial Android. I installed Ubuntu 13.04 Raring Ringtail on it, but it's still unsuable.
 So I searched around on web, I found those using kernel 3.1.10 and no one care about unstable. Someone made Nexus 7 run on kernel 3.4 Unlegacy Android but no documents.
