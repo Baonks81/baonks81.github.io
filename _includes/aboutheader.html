@@ -7,7 +7,11 @@
           {% if page.title == "Project" %}
                <header class="masthead" style="background-image: url({{ 'assets/images/01.jpg' | relative_url }})">
           {% else %}
-               <header class="masthead" style="background-image: url({{ 'assets/images/about-bg.jpg' | relative_url }})">
+               {% if page.title == "Contact" %}
+                    <header class="masthead" style="background-image: url({{ 'assets/images/contact-bg.jpg' | relative_url }})">
+               {% else %}
+                    <header class="masthead" style="background-image: url({{ 'assets/images/about-bg.jpg' | relative_url }})">
+               {% endif %}
           {% endif %}
      {% endif %}
 {% endif %}
