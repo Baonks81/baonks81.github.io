@@ -1,18 +1,16 @@
-<div>
-   <h2>Recent Posts:</h2>
-      <ul>
-         {% assign countPost = 0 %}
-         {% for post in site.posts %}
-              {% if countPost < 5 %}
-                   {% if page.title == post.title %}
-                        {% assign forloop.index = forloop.index | plus:1 %}
-                   {% else %}
-                        {% assign countPost = countPost | plus:1 %}
-                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                   {% endif %}
-              {% else %}
-                   {% break %}
-              {% endif %}
-         {% endfor %}
-      </ul>
-</div>
+<h2>Recent Posts:</h2>
+<ul>
+   {% assign countPost = 0 %}
+   {% for post in site.posts %}
+     {% if countPost < 5 %}
+       {% if page.title == post.title %}
+         {% assign forloop.index = forloop.index | plus:1 %}
+       {% else %}
+         {% assign countPost = countPost | plus:1 %}
+         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+       {% endif %}
+         {% else %}
+           {% break %}
+     {% endif %}
+   {% endfor %}
+</ul>
