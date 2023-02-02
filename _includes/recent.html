@@ -4,7 +4,7 @@
          {% assign countPost = 0 %}
          {% for post in site.posts %}
               {% if countPost < 5 %}
-                   {% assign countPost = countPost + 1 %}
+                   {% assign countPost = countPost | plus:1 %}
                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
               {% else %}
                    {% break %}
