@@ -2,7 +2,6 @@
 layout: about
 title: About
 subheading: This is what I do
-permalink: /about/
 ---
 I'm not a programmer, but I could read flow-chart or coding. I've just used GNU/Linux as a normal operating system
 
