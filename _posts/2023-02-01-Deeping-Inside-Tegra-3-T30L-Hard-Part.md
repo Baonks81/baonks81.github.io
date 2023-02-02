@@ -3,9 +3,6 @@ layout: post
 category: tegra 
 ---
 
-<!-- Return to Top -->
-<a href="javascript:" id="return-to-top"><i class="fa fa-angle-double-up fa-stack-1x fa-inverse up-arrow"></i></a>
-
 This is hard part about Tegra 3 T30L, which I found out, I talked about SoC but everyone around did not understand.
 When I used Nexus 7 2012 tablet like my daily driver device. I found it not a tablet, because Nvidia combine ULP Geforce into it, GPU was PC/laptop low voltage version.
 Grate driver community support it, run GNU/Linux systemd, AlpineLinux openrc. It could 3d accelarate with drm on Xorg, so I install Ubuntu/ArchLinux ARM, but it's always overheat and auto poweroff.
@@ -28,19 +25,3 @@ DE: i3gaps, MATE.
 Tools: jekyll, git, vim, nano
 &nbsp;
 {% include youtube.html id='it-JM-GkJxw' %}
-
-<script>
-    // ===== Scroll to Top ==== 
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
-</script>
