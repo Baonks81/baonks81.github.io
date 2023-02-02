@@ -11,7 +11,13 @@ layout: default
   {% for post in paginator.posts %}
     <article>
       <header>
-        <span class="date">{{ post.date | date: "%d %b %Y" }}</span>
+        <span class="text-muted font-italic">
+           {{ post.date | date: "%d %b %Y" }}
+           {% assign category = site.categories | where: 'short_name', page.category | first %}
+           {% if category %}
+             - <a href="{{ category.url }}"">{{ category.name }}</a>
+           {% endif %}
+        </span>
         <h2>
            <a href="{{ post.url | relative_url }}">
              {{ post.title }}
