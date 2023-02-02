@@ -22,7 +22,7 @@ layout: default
                {% if image contains 'src' %}
                  {% if foundImage == 0 %}
                    {% assign html = image | split:"/>" | first %}
-                   <img class="image-responsive" {{ html }} />
+                   <img class="image-responsive image-wrapper" {{ html }} />
                    {% break %}
                  {% endif %}
                {% endif %}
