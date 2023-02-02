@@ -1,0 +1,9 @@
+<div>
+   <h2>Recent Posts:</h2>
+      <ul>
+         {% assign filtered_posts = site.posts | where: 'category', page.short_name %}
+         {% for post in site.posts %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+         {% endfor %}
+      </ul>
+</div>
