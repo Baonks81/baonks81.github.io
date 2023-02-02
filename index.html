@@ -13,7 +13,7 @@ layout: default
       <header>
         <span class="text-muted font-weight-lighter fst-italic">{{ post.date | date: "%d %b %Y" }} - {{ post.category }}</span>
         <h2>
-           <a href="{{ post.url | relative_url }}">
+           <a href="{{ post.url | relative_url }}" class="text-my-own-color">
              {{ post.title }}
              <br /><span>&nbsp;</span>
              {% assign foundImage = 0 %}
@@ -31,7 +31,7 @@ layout: default
         </h2>
         <p>{{ post.content | truncatewords:25 | strip_html }}</p>
       </header>
-      <a href="{{ post.url | relative_url  }}" class="link-blue">READ MORE</a>
+      <a href="{{ post.url | relative_url  }}" class="text-my-own-color">READ MORE</a>
     </article>
 
     <!-- Dividers -->
