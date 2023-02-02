@@ -15,7 +15,7 @@ Rooting devices and using root explorer, some folder to notes
 /sys/class/thermal/thermal_zone*
 /sys/block/*/queue
 
-Getting sysctl.conf from android terminal and busybox apps
+Getting sysctl.conf from android terminal and busybox apps.
 The CPU frequency should set at 66% on max frequency
 
 Example: msm8916 ~ 1,2GHz per core.
