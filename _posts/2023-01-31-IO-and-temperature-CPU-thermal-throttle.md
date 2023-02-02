@@ -5,8 +5,7 @@ category: lk2nd
 
 {% include image.html
             img="images/Python-Automation.jpg"
-            title="Coding" 
-            caption="I/O and parameters" %}
+            title="I/O and parameters" %}
 
 This post, I share my experiences from I/O and CPU temperature, thermal zone, and CPU throttle for system stability, and device's not too hot.
 As we knew, Android reach the stable so long, when we ports Android devices to GNU/Linux, we have to get some configures to upstream such as I/O, thermal zone, cpu_governor and scale_frequency_governor.
