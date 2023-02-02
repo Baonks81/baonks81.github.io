@@ -8,7 +8,7 @@
              {{ page.date | date_to_string }}
              {% assign category = site.categories | where: 'short_name', page.category | first %}
              {% if category %}
-               - <a href="{{ category.url }}"">{{ category.name }}</a>
+               - <a href="{{ category.url }}" class="text-my-own-color">{{ category.name }}</a>
              {% endif %}
            </em></span>
            <!-- Visitor Counter -->
