@@ -1,9 +1,14 @@
 <div>
    <h2>Recent Posts:</h2>
       <ul>
-         {% assign filtered_posts = site.posts | where: 'category', page.short_name %}
+         {% assign countPost = 0 %}
          {% for post in site.posts %}
-              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% if countPost < 5 %}
+                   {% assign countPost = countPost + 1 %}
+                   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% else %}
+                   {% break %}
+              {% endif %}
          {% endfor %}
       </ul>
 </div>
