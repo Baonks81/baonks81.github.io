@@ -4,13 +4,13 @@
       <div class="col-md-10 col-lg-8 col-xl-7">
         <div class="site-heading">
            <h3>{{ page.title }}</h3>
-            <span class="text-muted font-weight-lighter">
+            <span class="font-weight-lighter"><em>
              {{ page.date | date_to_string }}
              {% assign category = site.categories | where: 'short_name', page.category | first %}
              {% if category %}
                - <a href="{{ category.url }}"">{{ category.name }}</a>
              {% endif %}
-           </span>
+           </em></span>
            <!-- Visitor Counter -->
            {% include single.html %}
         </div>
