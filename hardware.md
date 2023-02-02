@@ -1,7 +1,6 @@
 ---
 layout: about
 title: Hardware
-permalink: /hardware/
 ---
 
 ### Main devices
