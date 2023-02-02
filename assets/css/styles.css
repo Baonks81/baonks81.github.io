@@ -244,6 +244,14 @@ p {
    border-radius: 10px;
 }
 
+.text-my-own-color {
+  color: #0d6efd !important; // Define your own color in your CSS
+  text-decoration: none;
+}
+.text-my-own-color:hover, .text-my-own-color:active {
+  color: #212529 !important; // Define your own color's darkening/lightening in your CSS
+}
+
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
