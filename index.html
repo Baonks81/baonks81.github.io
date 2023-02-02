@@ -11,7 +11,7 @@ layout: default
   {% for post in paginator.posts %}
     <article>
       <header>
-        <span class="text-muted font-italic">{{ post.date | date: "%d %b %Y" }} - {{ post.category }}</span>
+        <h4 class="text-muted font-italic"><small>{{ post.date | date: "%d %b %Y" }} - {{ post.category }}</small></h4>
         <h2>
            <a href="{{ post.url | relative_url }}">
              {{ post.title }}
