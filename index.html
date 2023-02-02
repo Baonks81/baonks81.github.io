@@ -16,17 +16,19 @@ layout: default
            <a href="{{ post.url | relative_url }}">
              {{ post.title }}
              <br /><span>&nbsp;</span>
+           <div class="image-wrapper">
              {% assign foundImage = 0 %}
              {% assign images = post.content | split:"<img " %}
              {% for image in images %}
                {% if image contains 'src' %}
                  {% if foundImage == 0 %}
                    {% assign html = image | split:"/>" | first %}
-                   <img class="image-responsive image-wrapper" {{ html }} />
+                   <img class="image-responsive" {{ html }} />
                    {% break %}
                  {% endif %}
                {% endif %}
              {% endfor %}
+            </div>
            </a>
         </h2>
         <p>{{ post.content | truncatewords:25 | strip_html }}</p>
