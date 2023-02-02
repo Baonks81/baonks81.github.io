@@ -8,7 +8,7 @@ title: Hardware
 ### Components
 
 - Name: Nexus 7 2012 as ARM tablet (code-name: grouper or tilapia)
-- CPU: Soc Nvidia Tegra T30L
+- CPU: SoC Nvidia Tegra T30L
 - RAM: 1GB
 - GPU: ULP Geforce
 - eMMC: 8GB, 16GB, 32GB
