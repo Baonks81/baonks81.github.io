@@ -249,7 +249,7 @@ p {
   text-decoration: none;
 }
 .text-my-own-color:hover, .text-my-own-color:active {
-  color: #212529 !important; // Define your own color's darkening/lightening in your CSS
+  color: #0085A1 !important; // Define your own color's darkening/lightening in your CSS
 }
 
 abbr[title],
