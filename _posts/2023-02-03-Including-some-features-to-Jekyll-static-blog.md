@@ -26,6 +26,8 @@ I shares some includes which I found those out and coding for my static blog, no
 - Display image [caption] in post Jekyll
 - Grabbing a post's first [image]
 
+The latest working, I've just connected all pages together as related posts, recent posts, etc.
+
 [Jekyll documents]: https://jekyllrb.com/docs/step-by-step/01-setup
 [clean-blog]: https://startbootstrap.com/previews/clean-blog
 [Youtube]: https://www.chunkhang.com/blog/responsive-youtube-video-with-jekyll
