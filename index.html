@@ -5,7 +5,7 @@ layout: default
 <!-- Post preview -->
 
 <!-- Return to Top -->
-<a href="javascript:" id="return-to-top"><i class="fa fa-angle-double-up fa-stack-1x fa-inverse up-arrow"></i></a>
+{% include top.html %}
 
 <div class="content">
   {% for post in paginator.posts %}
@@ -66,30 +66,10 @@ layout: default
   {% endif %}
 </div>
 
-
-<script src={{ "assets/js/jquery-1.11.1.js" | relative_url }}></script>
-<script src={{ "assets/js/jscroll/jquery.jscroll.js" | relative_url }}></script>
-
 <script type="text/javascript">
 // content selector is used to extract the additional items 
 $('.content').jscroll({
     contentSelector: ".content",
     nextSelector: '.next'
-});
-</script>
-
-<script>
-    // ===== Scroll to Top ==== 
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
 });
 </script>
