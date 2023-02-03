@@ -19,6 +19,7 @@ I shares some includes which I found those out and coding for my static blog, no
             caption="Jekyll mindmaps"
             url="https://play.google.com/store/apps/details?amp%3Bhl=en&gclid=Cj0KCQiA2-2eBhClARIsAGLQ2RlwB8XPjDiKyfEQMBNlKC2Z1o78cN-v7UmfS7fpFchppoynJSpheVAaAtY-EALw_wcB&id=com.lucidchart.android.chart&km_CPC_AdGroupID=60168109911&km_CPC_AdPosition=&km_CPC_CampaignId=1484560204&km_CPC_Country=1028581&km_CPC_Creative=442433233604&km_CPC_Device=m&km_CPC_ExtensionID=&km_CPC_Keyword=%2Blucid%20chart%20%2Bmind%20%2Bmap&km_CPC_MatchType=b&km_CPC_Network=g&km_CPC_TargetID=kwd-468215674683&km_CPC_placement=&km_CPC_target=&usecase=mindmap&utm_campaign=_chart_en_tier3_mixed_search_brand_bmm_&utm_medium=cpc&utm_source=google" %}
 
+
 - Responsive [Youtube] Video with Jekyll
 - Adding [visitor-counter] to statically generated web pages
 - Jekyll [pagination] infinity scroll
