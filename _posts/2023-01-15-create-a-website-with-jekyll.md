@@ -11,7 +11,7 @@ My journey has just begun but so many things which I learn from open-source.
             caption="Static websites and blogs building tool"
             url="https://jekyllrb.com/docs/step-by-step/01-setup" %}
 
-At the beginning, I start bought 1 Nexus 7 2012 16GB from my friend in 2018. But it's still slow at that time.
+At the beginning, I bought 1 Nexus 7 2012 16GB from my friend in 2018. But it's still slow at that time.
 I didn't optimize it, especially Android. I installed Ubuntu 13.04 Raring Ringtail on it, but it's still unsuable.
 So I searched around on web, I found those using kernel 3.1.10 and no one care about unstable. Someone made Nexus 7 run on kernel 3.4 Unlegacy Android but no documents.
 I decided left it there, untill 2020, I saw someone testing grouper kernel on princeton repo with apk package, I don't know how to using it too
