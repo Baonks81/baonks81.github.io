@@ -27,6 +27,7 @@ I shares some includes which I found those out and coding for my static blog, no
 - [Display image caption in post Jekyll]
 - [Grabbing a post's first image]
 
+The scroll post had manual json and javascript coding [here].
 The latest working, I've just connected all pages together as related posts, recent posts, etc.
 
 [Jekyll documents]: https://jekyllrb.com/docs/step-by-step/01-setup
@@ -38,3 +39,4 @@ The latest working, I've just connected all pages together as related posts, rec
 [Floating Back to Top Button HTML & CSS]: https://codeconvey.com/floating-back-to-top-button-html/
 [Display image caption in post Jekyll]: https://superdevresources.com/image-caption-jekyll/
 [Grabbing a post's first image]: https://stackoverflow.com/a/25466298
+[here]: https://developer.epages.com/blog/coding/how-to-implement-endless-scrolling-for-jekyll-blog-posts/
