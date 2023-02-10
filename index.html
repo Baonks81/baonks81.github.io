@@ -4,12 +4,66 @@ layout: default
 
 <!-- Post preview -->
 
-<!-- Return to Top -->
-{% include top.html %}
-
 <div class="content">
-  {% for post in paginator.posts %}
-    <article>
+   <div class="container-md">
+      <div class="row row-cols-auto row-cols-sm-auto row-cols-md-auto row-cols-lg-auto">
+         {% for post in paginator.posts %}
+              <div class="col col-12 col-sm-12 col-md-6 col-lg-4">
+                 <div class="card mb-5 shadow-sm">
+                    <a href="{{ post.url | relative_url }}">
+                       <div class="image-wrapper">
+                          {% assign foundImage = 0 %}
+                          {% assign images = post.content | split:"<img " %}
+                          {% for image in images %}
+                               {% if image contains 'src' %}
+                                    {% if foundImage == 0 %}
+                                         {% assign html = image | split:"/>" | first %}
+                                         <img class="img-fluid image-responsive" {{ html }} />
+                                         {% break %}
+                                    {% endif %}
+                               {% endif %}
+                          {% endfor %}
+                       </div>
+                    </a>
+                    
+                    <div class="card-body">
+                       <div class="card-title">
+                          <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+                       </div>
+                       <div class="card-text">
+                          <p>{{ post.content | truncatewords:25 | strip_html }}</p>
+                       </div>
+                       <a href="{{ post.url | relative_url  }}" class="btn btn-outline-primary rounded-0 float-end text-my-own-color">Read More</a>
+                    </div>
+                 </div>
+              </div>
+                            
+         {% endfor %}
+              
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+        <a href="/">&laquo; Prev</a>
+      {% else %}
+        <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+      {% endif %}    
+    {% else %}
+      <span>&laquo; Prev</span>
+    {% endif %}
+
+    {% if paginator.next_page %}
+      <a class='next' href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+    {% else %}
+      <span class='next'>Next &raquo;</span>
+    {% endif %}
+  </div>
+  {% endif %}
+      </div>
+   </div>
+</div>
+
+<!-- <article>
       <header>
         <span class="text-muted font-weight-lighter fst-italic">{{ post.date | date: "%d %b %Y" }} - {{ post.category }}</span>
         <h2>
@@ -35,36 +89,17 @@ layout: default
       </header>
       <a href="{{ post.url | relative_url  }}" class="text-my-own-color">READ MORE</a>
     </article>
-
-    <!-- Dividers -->
+-->
+    <!-- Dividers
     {% if post == site.posts.last %}
          <span>&nbsp;</span>
     {% else %}
          <hr class="my-4" />
     {% endif %}
+-->
 
-  {% endfor %}
-
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a href="/">&laquo; Prev</a>
-      {% else %}
-        <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
-      {% endif %}    
-    {% else %}
-      <span>&laquo; Prev</span>
-    {% endif %}
-
-    {% if paginator.next_page %}
-      <a class='next' href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-    {% else %}
-      <span class='next'>Next &raquo;</span>
-    {% endif %}
-  </div>
-  {% endif %}
-</div>
+<!-- Return to Top -->
+{% include top.html %}
 
 <script type="text/javascript">
 // content selector is used to extract the additional items 
