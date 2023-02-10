@@ -233,15 +233,15 @@ p {
 .image-wrapper img {
    width: 100%;
    max-width: 400px;
-   height: auto;
-   border-radius: 10px;
+   height: 280px;
+   border-radius: 4px;
 }
 
 .image-responsive {
    width: 100%;
    max-width: 400px;
-   height: auto;
-   border-radius: 10px;
+   height: 280px;
+   border-radius: 4px;
 }
 
 .text-my-own-color {
