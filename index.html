@@ -29,6 +29,7 @@ layout: default
                     <div class="card-body">
                        <div class="card-title">
                           <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+                          <span class="text-muted font-weight-lighter fst-italic">{{ post.date | date: "%d %b %Y" }} - {{ post.category }}</span>
                        </div>
                        <div class="card-text">
                           <p>{{ post.content | truncatewords:25 | strip_html }}</p>
