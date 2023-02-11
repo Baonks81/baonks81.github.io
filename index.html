@@ -5,11 +5,22 @@ layout: default
 <!-- Post preview -->
 
 <div class="content">
-   <div class="container-md">
-      <div class="row row-cols-auto row-cols-sm-auto row-cols-md-auto row-cols-lg-auto">
+   <div class="container-fluid">
+      <div class="row row-cols-auto row-cols-xs-auto row-cols-sm-auto row-cols-md-auto row-cols-lg-auto">
          {% for post in paginator.posts %}
-              <div class="col col-12 col-sm-12 col-md-6 col-lg-4">
-                 <div class="card mb-5 shadow-sm">
+            {% if forloop.index == 1 %}
+                 <div class="col col-12 col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="card mb-5 shadow-sm flex-lg-row flex-xl-row flex-xxl-row">
+            {% else %}
+               {% if forloop.index > 4 %}
+                    <div class="col col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                       <div class="card mb-5 shadow-sm">
+               {% else %}
+                    <div class="col col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                       <div class="card mb-5 shadow-sm">
+               {% endif %}
+
+            {% endif %}
                     <a href="{{ post.url | relative_url }}">
                        <div class="image-wrapper">
                           {% assign foundImage = 0 %}
@@ -38,7 +49,7 @@ layout: default
                     </div>
                  </div>
               </div>
-                            
+              
          {% endfor %}
               
   {% if paginator.total_pages > 1 %}
