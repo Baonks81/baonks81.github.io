@@ -10,7 +10,7 @@ layout: default
          {% for post in paginator.posts %}
             {% if forloop.index == 1 %}
                  <div class="col col-12 col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12 col-xxl-12">
-                    <div class="card mb-5 shadow-sm flex-lg-row flex-xl-row flex-xxl-row">
+                    <div class="card mb-5 shadow-sm flex-lg-row flex-xl-row flex-xxl-row" d-flex align-items-center>
             {% else %}
                {% if forloop.index > 4 %}
                     <div class="col col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -21,23 +21,24 @@ layout: default
                {% endif %}
 
             {% endif %}
-                    <a href="{{ post.url | relative_url }}">
-                       <div class="image-wrapper">
-                          {% assign foundImage = 0 %}
-                          {% assign images = post.content | split:"<img " %}
-                          {% for image in images %}
-                               {% if image contains 'src' %}
-                                    {% if foundImage == 0 %}
-                                         {% assign html = image | split:"/>" | first %}
-                                         <img class="img-fluid image-responsive" {{ html }} />
-                                         {% break %}
-                                    {% endif %}
-                               {% endif %}
-                          {% endfor %}
-                       </div>
-                    </a>
-                    
-                    <div class="card-body">
+                    <div class="flex-shrink-0">
+                       <a href="{{ post.url | relative_url }}">
+                          <div class="image-wrapper">
+                             {% assign foundImage = 0 %}
+                             {% assign images = post.content | split:"<img " %}
+                             {% for image in images %}
+                                  {% if image contains 'src' %}
+                                       {% if foundImage == 0 %}
+                                            {% assign html = image | split:"/>" | first %}
+                                            <img class="img-fluid image-responsive" {{ html }} />
+                                            {% break %}
+                                       {% endif %}
+                                  {% endif %}
+                             {% endfor %}
+                          </div>
+                       </a>
+                    </div>
+                    <div class="card-body flex-grow-1 ms-3">
                        <div class="card-title">
                           <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
                           <span class="text-muted font-weight-lighter fst-italic">{{ post.date | date: "%d %b %Y" }} - {{ post.category }}</span>
