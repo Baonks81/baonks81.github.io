@@ -9,14 +9,14 @@ layout: default
       <div class="row row-cols-auto row-cols-xs-auto row-cols-sm-auto row-cols-md-auto row-cols-lg-auto">
          {% for post in paginator.posts %}
             {% if forloop.index == 1 %}
-                 <div class="col col-12 col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12 col-xxl-12 border-bottom">
+                 <div class="col col-12 col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12 col-xxl-12">
                     <div class="card mb-5 shadow-sm h-100 flex-lg-row flex-xl-row flex-xxl-row d-flex align-items-center">
             {% else %}
                {% if forloop.index > 4 %}
-                    <div class="col col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 border-bottom">
+                    <div class="col col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                        <div class="card mb-5 shadow-sm h-100">
                {% else %}
-                    <div class="col col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 border-bottom">
+                    <div class="col col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                        <div class="card mb-5 shadow-sm h-100">
                {% endif %}
 
