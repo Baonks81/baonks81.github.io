@@ -6,7 +6,7 @@ category: tegra
 As mentioned in the previous post, Nexus 7 2012 grouper/tilapia is equipped with ULP Geforce GPU, of PC/Laptop, which is a power-saving SoC series. So the mainline kernel developers have been trying to get linux to run on the 2012 Nexus 7 as a tablet. 
 After the entire Nvidia source code for the Tegra SoC and the new GPU was made public by the LapsusS team. 
 The developers who have developed the Tegra GPT compression tool is [re-crypt], keeping the bootloader intact for the device not to be bricked, 
-and there is space on the bootloader partition to install more U-boot for Tegra GPT purposes on Nexus 7 using mainstream Linux, you can compile the new kernel and install it on the device boot partition
+and there is space on the bootloader partition to install more U-boot for Tegra GPT purposes on Nexus 7 using GNU/Linux with mainline kernel, you can compile the new kernel and install it on the device boot partition
 
 {% include image.html
             img="images/1280px-U-Boot_Logo.svg.png"
@@ -20,7 +20,7 @@ The first thing to do is to find the bct.bin and sbk of each Nexus 7 2012 using 
 - [Unbrick Nexus 7 with another Tegra 3 Device]
 - [How to unbrick Nexus 7 without blob.bin]
 
-To dump bct.bin and sbk of Nexus 7 2012, then enter sbk into $key in grouper's re-crypt script to re-part all Tegra GPT on the device, and use nvflash or fuse_gee to install U-boot into the bootloader
+To dump bct.bin and sbk of Nexus 7 2012, then enter sbk into $key in grouper's re-crypt script to re-part all Tegra GPT on the device, and use nvflash or fuse_gee to install U-boot into the bootloader.
 How to build U-Boot on Tegra has no specific instructions, can only refer to build of imx6 or imx7 on [NXP forums]
 
 ```
