@@ -1,5 +1,8 @@
-<h2>Recent Posts:</h2>
-<ul>
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    <h2>Recent Posts:</h2>
+  </div>
+  <ul>
    {% assign countPost = 0 %}
    {% for post in site.posts %}
      {% if countPost < 5 %}
@@ -13,4 +16,5 @@
            {% break %}
      {% endif %}
    {% endfor %}
-</ul>
+  </ul>
+</div>
