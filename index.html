@@ -30,7 +30,7 @@ layout: default
                                   {% if image contains 'src' %}
                                        {% if foundImage == 0 %}
                                             {% assign html = image | split:"/>" | first %}
-                                            <img class="img-fluid image-responsive" {{ html }} />
+                                            <img class="card-img-top img-fluid image-responsive" {{ html }} />
                                             {% break %}
                                        {% endif %}
                                   {% endif %}
@@ -46,7 +46,7 @@ layout: default
                        <div class="card-text">
                           <p>{{ post.content | truncatewords:15 | strip_html }}</p>
                        </div>
-                       <a href="{{ post.url | relative_url  }}" class="btn btn-outline-primary rounded-0 text-primary">Read More</a>
+                       <a href="{{ post.url | relative_url  }}" class="btn btn-primary">Read More</a>
                     </div>
                  </div>
               </div>
