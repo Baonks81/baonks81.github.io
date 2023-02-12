@@ -52,6 +52,9 @@ tilapia rev. E1565 - with GSM
 
 Do I have grouper or tilapia?
 
+```
+...
+
 TWRP (adb shell) $ grep androidboot.baseband=unknown /proc/cmdline && echo grouper || echo tilapia
 
 Which hardware revision of grouper do I have?
@@ -59,6 +62,10 @@ Which hardware revision of grouper do I have?
 TWRP (adb shell) $ find /sys/devices/ | grep -c max776 && echo You have E1565
 
 TWRP (adb shell) $ find /sys/devices/ | grep -c tps6591 && echo You have PM269
+
+...
+
+```
 
 [re-crypt]: https://github.com/clamor-s/re-crypt
 [tegra debrick]: https://github.com/tofurky/tegra30_debrick
