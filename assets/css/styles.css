@@ -252,6 +252,17 @@ p {
   color: #0085A1 !important; // Define your own color's darkening/lightening in your CSS
 }
 
+/*! Fix cover image */
+.fit-cover {
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .fit-cover {
+    position: absolute;
+  }
+}
+
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
