@@ -252,6 +252,22 @@ p {
   color: #0085A1 !important; // Define your own color's darkening/lightening in your CSS
 }
 
+.content-sidebar {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.content-sidebar > *:nth-child(1) {
+  flex: 1 1 70%;
+  min-width: 30ch;
+}
+
+.content-sidebar > *:nth-child(2) {
+  flex: 1 1 30%;
+  min-width: 15ch;
+}
+
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
