@@ -31,7 +31,7 @@ layout: default
                                        {% if foundImage == 0 %}
                                             {% assign html = image | split:"/>" | first %}
                                             {% if forloop.index == 1 %}
-                                               <img class="img-fluid rounded image-responsive fit-cover w-100 h-100" {{ html }} />
+                                               <img class="img-fluid rounded image-responsive card-img fit-cover w-100 h-100" {{ html }} />
                                             {% else %}
                                                <img class="img-fluid rounded image-responsive" {{ html }} />
                                             {% endif %}
