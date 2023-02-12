@@ -21,7 +21,7 @@ layout: default
                {% endif %}
 
             {% endif %}
-                    <div class="flex-grow-1">
+                    <div class="p-2 flex-grow-1">
                        <a href="{{ post.url | relative_url }}">
                           <div class="image-wrapper">
                              {% assign foundImage = 0 %}
@@ -38,7 +38,7 @@ layout: default
                           </div>
                        </a>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-2">
                        <div class="card-title">
                           <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
                           <span class="text-muted font-weight-lighter fst-italic">{{ post.date | date: "%d %b %Y" }} - {{ post.category }}</span>
