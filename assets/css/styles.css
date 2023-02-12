@@ -252,6 +252,7 @@ p {
   color: #0085A1 !important; // Define your own color's darkening/lightening in your CSS
 }
 
+/*! Content and sidebar for post.html */
 .content-sidebar {
   display: flex;
   gap: 1em;
