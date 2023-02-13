@@ -28,11 +28,12 @@ layout: default
                                   {% if image contains 'src' %}
                                        {% if foundImage == 0 %}
                                             {% assign html = image | split:"/>" | first %}
-                                            {% if forloop.index == 1 %}
-                                               <img class="img-fluid rounded image-responsive" {{ html }} />
-                                            {% else %}
-                                               <img class="img-fluid rounded image-responsive" {{ html }} />
-                                            {% endif %}
+                                            {% case forloop.index %}
+                                                 {% when 1 %}
+                                                      <img class="img-fluid rounded image-responsive card-img fit-cover w-100 h-100" {{ html }} />
+                                                 {% else %}
+                                                      <img class="img-fluid rounded image-responsive" {{ html }} />
+                                            {% endcase %}
                                             {% break %}
                                        {% endif %}
                                   {% endif %}
