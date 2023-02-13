@@ -21,7 +21,7 @@ layout: default
             {% endcase %}
                     <div class="w-100 h-100">
                        <a href="{{ post.url | relative_url }}">
-                         <div class="image-wapper">
+                         <div class="image-wrapper">
                              {% assign foundImage = 0 %}
                              {% assign images = post.content | split:"<img " %}
                              {% for image in images %}
