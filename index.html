@@ -53,8 +53,8 @@ layout: default
                           </div>
                           <p class="card-text">{{ post.content | truncatewords:15 | strip_html }}</p>
                        </div>
+                       <a href="{{ post.url | relative_url  }}" class="btn btn-primary">Read More</a>
                     </div>
-                    <span class="read-more"><a href="{{ post.url | relative_url  }}" class="btn btn-primary">Read More</a></span>
                  </div>
               </div>
               
