@@ -2,14 +2,17 @@
 layout: about
 title: Categories
 ---
-<ul>
-  {% for category in site.categories %}
-       <li>
-         <h2><a href="{{ category.url }}">{{ category.name }}</a></h2>
+
+<div class="card">
+   <ul class="list-group list-group-flush">>
+      {% for category in site.categories %}
+           <li class="list-group-item">
+              <h2><a href="{{ category.url }}">{{ category.name }}</a></h2>
 <!--
-         <h3>{{ category.open_source }}</h3>
-         <p>{{ category.content | markdownify }}</p>
+           <h3>{{ category.open_source }}</h3>
+           <p>{{ category.content | markdownify }}</p>
 -->
-       </li>
-  {% endfor %}
-</ul>
+          </li>
+      {% endfor %}
+   </ul>
+</div>
