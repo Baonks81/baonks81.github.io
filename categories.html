@@ -3,16 +3,27 @@ layout: about
 title: Categories
 ---
 
-<div class="card">
+<div class="row mt-2 g-4">
+   <div class="col-md-3">
+      <div class="card p-2">
+         <div class="d-flex justify-content-between align-items-center p-2">
+            <div class="flex-column lh-1 imagename">
+               <i class="fa-solid fa-caret-right"></i> <a href="{{ category.url }}"><span> {{ category.name }} </span></a>
+            </div>
+            <div><img src={{" assets/favicon.ico" | relative_url }} height="100" width="100"</div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- div class="card">
    <ul class="list-group list-group-flush">
       {% for category in site.categories %}
            <li class="list-group-item">
               <h2><i class="fa-solid fa-caret-right"></i> <a href="{{ category.url }}">{{ category.name }}</a></h2>
-<!--
            <h3>{{ category.open_source }}</h3>
            <p>{{ category.content | markdownify }}</p>
--->
           </li>
       {% endfor %}
    </ul>
-</div>
+</div -->
