@@ -40,27 +40,21 @@ layout: default
                                        {% endif %}
                                   {% endif %}
                              {% endfor %}
-                             <div class="image-overlay"></div>
                           </div>
                        </a>
                     </div>
                     <div class="card-body flex-shrink-1">
                        <div class="card-title">
                           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-                          <!-- span class="text-muted font-weight-lighter fst-italic">{{ post.date | date: "%d %b %Y" }} - {{ post.category }}</span -->
                        </div>
                        <div class="text-left my-2">
                           <div class="sub-cat text-truncate">
-                             <span class="badge rounded-pill bg-category text-uppercase">category</span>
-                             <span class="text-muted font-weight-lighter fst-italic">{{ post.category }}</span>
+                             <span class="text-muted font-weight-lighter fst-italic"><i class="far fa-calendar-alt"></i>{{ post.date | date: "%d %b %Y" }} - {{ post.category }}</span>
                           </div>
                           <p class="card-text">{{ post.content | truncatewords:15 | strip_html }}</p>
                        </div>
                     </div>
-                    <div class="card-footer">
-                       <span><i class="far fa-calendar-alt"></i>{{ post.date | date: "%d %b %Y" }}</span>
-                       <span class="read-more"><a href="{{ post.url | relative_url  }}" class="text-uppercase read-more-2">Read more</a></span>
-                    </div>
+                    <span class="read-more"><a href="{{ post.url | relative_url  }}" class="btn btn-primary">Read More</a></span>
                  </div>
               </div>
               
