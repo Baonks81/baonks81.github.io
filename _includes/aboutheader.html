@@ -1,20 +1,15 @@
-{% if page.title == "Hardware" %}
-     <header class="masthead" style="background-image: url({{ 'assets/images/06.jpg' | relative_url }})">
-{% else %}
-     {% if page.title == "Categories" %}
+{% case page.title %}
+     {% when 'Hardware' %}
+          <header class="masthead" style="background-image: url({{ 'assets/images/06.jpg' | relative_url }})">
+     {% when 'Categories' %}
           <header class="masthead" style="background-image: url({{ 'assets/images/02.jpg' | relative_url }})">
+     {% when 'Project' %}
+          <header class="masthead" style="background-image: url({{ 'assets/images/01.jpg' | relative_url }})">
+     {% when 'Contact' %}
+          <header class="masthead" style="background-image: url({{ 'assets/images/contact-bg.jpg' | relative_url }})">
      {% else %}
-          {% if page.title == "Project" %}
-               <header class="masthead" style="background-image: url({{ 'assets/images/01.jpg' | relative_url }})">
-          {% else %}
-               {% if page.title == "Contact" %}
-                    <header class="masthead" style="background-image: url({{ 'assets/images/contact-bg.jpg' | relative_url }})">
-               {% else %}
-                    <header class="masthead" style="background-image: url({{ 'assets/images/about-bg.jpg' | relative_url }})">
-               {% endif %}
-          {% endif %}
-     {% endif %}
-{% endif %}
+          <header class="masthead" style="background-image: url({{ 'assets/images/about-bg.jpg' | relative_url }})">
+{% endcase %}
   <div class="container position-relative px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-7">
