@@ -239,7 +239,7 @@ p {
 
 .image-responsive {
    width: 100%;
-   max-width: 400px;
+   max-width: 300px;
    height: 280px;
    border-radius: 4px;
 }
