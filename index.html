@@ -23,7 +23,7 @@ layout: default
                             <div>
             {% endcase %}
                        <a href="{{ post.url | relative_url }}">
-                         <div class="card-image image-wrapper">
+                         <div class="card-image">
                              {% assign foundImage = 0 %}
                              {% assign images = post.content | split:"<img " %}
                              {% for image in images %}
