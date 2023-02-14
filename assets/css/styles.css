@@ -232,9 +232,9 @@ p {
 /*! image responsive */
 .image-wrapper img {
    width: 100%;
-   max-width: 400px;
-   height: 300px;
-   border-radius: 4px;
+   max-width: 640px;
+   height: 480px;
+   border-radius: 10px;
 }
 
 .text-my-own-color {
