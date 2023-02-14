@@ -11,8 +11,8 @@ layout: default
             {% case forloop.index %}
                  {% when 1 %}
                       <div class="col-lg-12">
-                         <div class="card mb-5 shadow-sm flex-lg-row d-flex align-items-lg-center justify-content-between">
-                            <div>
+                         <div class="card mb-5 shadow-sm flex-lg-row d-flex align-items-lg-center">
+                            <div class="w-100">
                  {% when 5 or 6 %}
                       <div class="col-lg-6">
                          <div class="card md-5 shadow-sm">
@@ -38,7 +38,7 @@ layout: default
                           </div>
                        </a>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body flex-lg-shrink-1">
                        <div class="card-title">
                           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
                           <div class="sub-cat text-truncate">
