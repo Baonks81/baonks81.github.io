@@ -5,24 +5,24 @@ layout: default
 <!-- Post preview -->
 
 <div class="content">
-   <div class="container-fluid px-lg-5">
-      <div class="row row-cols-md-2 row-cols-lg-2 mx-lg-n5">
+   <div class="container-fluid px-lg-3">
+      <div class="row row-cols-md-2 row-cols-lg-2 mx-lg-n3">
          {% for post in paginator.posts %}
             {% case forloop.index %}
                  {% when 1 %}
-                      <div class="col-md-12 col-lg-12 py-5 px-lg-5 border-3 bg-light">
+                      <div class="col-md-12 col-lg-12 py-5 px-lg-3 border-3 bg-light">
                          <div class="card mb-5 flex-md-row">
                             <div class="w-100">
                  {% when 5 %}
-                      <div class="col-lg-6 py-5 px-lg-5 border bg-light">
+                      <div class="col-lg-6 py-5 px-lg-3 border bg-light">
                          <div class="card md-5"> <!-- shadow-sm" -->
                             <div>
                  {% when 6 %}
-                      <div class="col-md-12 col-lg-6 py-5 px-lg-5 border bg-light">
+                      <div class="col-md-12 col-lg-6 py-5 px-lg-3 border bg-light">
                          <div class="card md-5">
                             <div>
                  {% else %}
-                      <div class="col-lg-4 py-5 px-lg-5 border bg-light">
+                      <div class="col-lg-4 py-5 px-lg-3 border bg-light">
                          <div class="card mb-5">
                             <div>
             {% endcase %}
