@@ -52,7 +52,14 @@ layout: default
                     </div>
                  </div>
               </div>
-              
+
+              <!-- Dividers
+              {% if post == site.posts.last %}
+                   <span>&nbsp;</span>
+              {% else %}
+                   <hr class="my-4" />
+              {% endif %}
+
          {% endfor %}
               
   {% if paginator.total_pages > 1 %}
