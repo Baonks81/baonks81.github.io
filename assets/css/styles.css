@@ -232,15 +232,15 @@ p {
 /*! image responsive */
 .image-wrapper img {
    width: 100%;
-   max-width: 480px;
-   height: 320px;
+   max-width: 400px;
+   height: 300px;
    border-radius: 4px;
 }
 
 .image-responsive {
    width: 100%;
    max-width: 480px;
-   height: 320px;
+   height: 360px;
    border-radius: 4px;
 }
 
@@ -250,17 +250,6 @@ p {
 }
 .text-my-own-color:hover, .text-my-own-color:active {
   color: #0085A1 !important; // Define your own color's darkening/lightening in your CSS
-}
-
-/*! Fix cover image */
-.fit-cover {
-  object-fit: cover;
-}
-
-@media (min-width: 768px) {
-  .fit-cover {
-    position: absolute;
-  }
 }
 
 abbr[title],
