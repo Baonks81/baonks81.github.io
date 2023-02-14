@@ -11,19 +11,19 @@ layout: default
             {% case forloop.index %}
                  {% when 1 %}
                       <div class="col-md-12 col-lg-12 py-3 px-lg-1 border bg-light">
-                         <div class="card mb-5 flex-md-row">
+                         <div class="card flex-md-row">
                             <div class="w-100">
                  {% when 5 %}
                       <div class="col-md-6 col-lg-6 py-3 px-lg-1 border bg-light">
-                         <div class="card md-5"> <!-- shadow-sm" -->
+                         <div class="card> <!-- md-5 shadow-sm" -->
                             <div>
                  {% when 6 %}
                       <div class="col-md-12 col-lg-6 py-3 px-lg-1 border bg-light">
-                         <div class="card md-5">
+                         <div class="card">
                             <div>
                  {% else %}
                       <div class="col-md-6 col-lg-4 py-5 py-3 px-lg-1 border bg-light">
-                         <div class="card mb-5">
+                         <div class="card">
                             <div>
             {% endcase %}
                        <a href="{{ post.url | relative_url }}">
