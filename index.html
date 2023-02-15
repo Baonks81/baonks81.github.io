@@ -10,20 +10,20 @@ layout: default
          {% for post in paginator.posts %}
             {% case forloop.index %}
                  {% when 1 %}
-                      <div class="col-md-12 col-lg-12 py-5 px-1 border-bottom bg-light">
-                         <div class="card flex-md-row d-flex align-items-md-center">
+                      <div class="col-md-12 col-lg-12 border-bottom bg-light">
+                         <article class="card flex-md-row d-flex align-items-md-center">
                             <div class="w-100">
                  {% when 5 %}
-                      <div class="col-md-6 col-lg-6 py-5 px-1 border-bottom bg-light">
-                         <div class="card"> <!-- md-5 shadow-sm" -->
+                      <div class="col-md-6 col-lg-6 border-bottom bg-light">
+                         <article class="card"> <!-- md-5 shadow-sm" -->
                             <div>
                  {% when 6 %}
-                      <div class="col-md-12 col-lg-6 py-5 px-1 border-bottom bg-light">
-                         <div class="card">
+                      <div class="col-md-12 col-lg-6 border-bottom bg-light">
+                         <article class="card">
                             <div>
                  {% else %}
-                    <div class="col-md-6 col-lg-4 py-5 px-1 border-bottom bg-light">
-                         <div class="card">
+                    <div class="col-md-6 col-lg-4 border-bottom bg-light">
+                         <article class="card">
                             <div>
             {% endcase %}
                        <a href="{{ post.url | relative_url }}">
@@ -54,7 +54,7 @@ layout: default
                           <!-- a href="{{ post.url | relative_url  }}" class="btn btn-primary">Read More</a -->
                        </div>
                     </div>
-                 </div>
+                 </article>
               </div>
             
          {% endfor %}
