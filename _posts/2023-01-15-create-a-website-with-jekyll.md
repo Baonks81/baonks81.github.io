@@ -2,6 +2,7 @@
 layout: post
 category: jekyll
 ---
+
 When I was online, I saw some github.io website. I've just noted that but I was still curious how to create webpage. I found jekyll, a tool to create static web, so I used it for my blog.
 My journey has just begun but so many things which I learn from open-source.
 
