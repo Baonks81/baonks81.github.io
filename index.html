@@ -5,7 +5,7 @@ layout: default
 <!-- Post preview -->
 
 <div class="content">
-   <div class="container">
+   <div class="container-fluid">
       <div class="row">
          {% for post in paginator.posts %}
             {% case forloop.index %}
@@ -15,19 +15,19 @@ layout: default
                             <div class="w-100 h-100">
                  {% when 5 %}
                       <div class="col-md-6 col-lg-6 border-bottom bg-light">
-                         <div class="card h-100"> <!-- md-5 shadow-sm" -->
+                         <div class="card w-100 h-100"> <!-- md-5 shadow-sm" -->
                             <div>
                  {% when 6 %}
                       <div class="col-md-12 col-lg-6 border-bottom bg-light">
-                         <div class="card h-100">
+                         <div class="card w-100 h-100">
                             <div>
                  {% else %}
                     <div class="col-md-6 col-lg-4 border-bottom bg-light">
-                         <div class="card h-100">
+                         <div class="card w-100 h-100">
                             <div>
             {% endcase %}
                        <a href="{{ post.url | relative_url }}">
-                         <div class="card-image image-wrapper">
+                         <div class="image-wrapper">
                              {% assign foundImage = 0 %}
                              {% assign images = post.content | split:"<img " %}
                              {% for image in images %}
