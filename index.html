@@ -6,23 +6,23 @@ layout: default
 
 <div class="content">
    <div class="container-fluid">
-      <div class="row g-2">
+      <div class="row">
          {% for post in paginator.posts %}
             {% case forloop.index %}
                  {% when 1 %}
-                      <div class="col-md-12 col-lg-12 py-5 px-1 border-bottom bg-light">
+                      <div class="col-md-12 col-lg-12 g-5 py-5 px-1 border-bottom bg-light">
                          <div class="card h-100 flex-md-row d-flex align-items-md-center">
                             <div class="w-100">
                  {% when 5 %}
-                      <div class="col-md-6 col-lg-6 py-5 px-1 border-bottom bg-light">
+                      <div class="col-md-6 col-lg-6 g-5 py-5 px-1 border-bottom bg-light">
                          <div class="card h-100"> <!-- md-5 shadow-sm" -->
                             <div>
                  {% when 6 %}
-                      <div class="col-md-12 col-lg-6 py-5 px-1 border-bottom bg-light">
+                      <div class="col-md-12 col-lg-6 g-5 py-5 px-1 border-bottom bg-light">
                          <div class="card h-100">
                             <div>
                  {% else %}
-                    <div class="col-md-6 col-lg-4 py-5 px-1 border-bottom bg-light">
+                    <div class="col-md-6 col-lg-4 g-5 py-5 px-1 border-bottom bg-light">
                          <div class="card h-100">
                             <div>
             {% endcase %}
