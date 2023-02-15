@@ -238,6 +238,7 @@ p {
    width: 66%;
    /*! max-width: 640px; */
    height: 66%;
+   margin: 30px 10px;
    border-radius: 10px;
 }
 
