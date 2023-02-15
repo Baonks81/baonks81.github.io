@@ -221,7 +221,6 @@ p {
 
 /*! _includes/image.html */
 .image-wrapper {
-   position: relative;
    width: 600px;
    height: 400px;
    background-color: #ffffff;
@@ -238,7 +237,6 @@ p {
    /*! width: 100%;
    max-width: 400px;
    height: 300px; */
-   position: absolute;
    top: 25%;
    left: 25%;
    right: 25%;
