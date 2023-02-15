@@ -13,21 +13,28 @@ layout: default
                       <div class="col-md-12 col-lg-12 border-bottom bg-light">
                          <div class="card flex-md-row d-flex align-items-md-center">
                             <div class="w-100 h-100">
+                       <a href="{{ post.url | relative_url }}">
+                         <div class="image-wrapper">
                  {% when 5 %}
                       <div class="col-md-6 col-lg-6 border-bottom bg-light">
                          <div class="card w-100 h-100 d-flex justify-content-center"> <!-- md-5 shadow-sm" -->
                             <div>
+                       <a href="{{ post.url | relative_url }}">
+                         <div class="image-responsive">
                  {% when 6 %}
                       <div class="col-md-12 col-lg-6 border-bottom bg-light">
                          <div class="card w-100 h-100 d-flex justify-content-center">
                             <div>
+                       <a href="{{ post.url | relative_url }}">
+                         <div class="image-wrapper">
                  {% else %}
                     <div class="col-md-6 col-lg-4 border-bottom bg-light">
                          <div class="card w-100 h-100 d-flex justify-content-center">
                             <div>
-            {% endcase %}
                        <a href="{{ post.url | relative_url }}">
                          <div class="image-responsive">
+            {% endcase %}
+
                              {% assign foundImage = 0 %}
                              {% assign images = post.content | split:"<img " %}
                              {% for image in images %}
