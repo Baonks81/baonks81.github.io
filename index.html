@@ -12,19 +12,19 @@ layout: default
                  {% when 1 %}
                       <div class="col-md-12 col-lg-12 py-5 px-1 border-bottom bg-light">
                          <div class="card flex-md-row d-flex align-items-md-center align-items-stretch">
-                            <div class="w-100 h-100">
+                            <div class="w-100">
                  {% when 5 %}
                       <div class="col-md-6 col-lg-6 py-5 px-1 border-bottom bg-light">
                          <div class="card align-items-stretch"> <!-- md-5 shadow-sm" -->
-                            <div class="h-100">
+                            <div>
                  {% when 6 %}
                       <div class="col-md-12 col-lg-6 py-5 px-1 border-bottom bg-light">
                          <div class="card align-items-stretch">
-                            <div class="h-100">
+                            <div>
                  {% else %}
                       <div class="col-md-6 col-lg-4 py-5 px-1 border-bottom bg-light">
                          <div class="card align-items-stretch">
-                            <div class="h-100">
+                            <div>
             {% endcase %}
                        <a href="{{ post.url | relative_url }}">
                          <div class="card-image image-wrapper">
