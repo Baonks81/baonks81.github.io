@@ -6,13 +6,8 @@ layout: default
 
 <div class="content">
    <div class="container-md">
-      <div class="row row-cols-md-2 row-cols-lg-2">
+      <div class="row">
          {% for post in paginator.posts %}
-           {% if post == site.post.last %}
-              <div class="col-md-12 py-5 px-1 border-bottom bg-light">
-                         <div class="card">
-                            <div>
-           {% else %}
             {% case forloop.index %}
                  {% when 1 %}
                       <div class="col-md-12 col-lg-12 py-5 px-1 border-bottom bg-light">
@@ -31,7 +26,6 @@ layout: default
                          <div class="card">
                             <div>
             {% endcase %}
-           {% endif %}
                        <a href="{{ post.url | relative_url }}">
                          <div class="card-image image-wrapper">
                              {% assign foundImage = 0 %}
