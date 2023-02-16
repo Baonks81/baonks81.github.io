@@ -230,7 +230,7 @@ p {
 }
 
 .image-responsive-first {
-   text-align: center;
+   text-align: left;
 }
 
 .image-responsive-widescreen {
@@ -250,7 +250,9 @@ p {
 }
 .image-responsive-first img {
    width: 90%;
+   height: 360;
    object-fit: cover;
+   object-position: left top;
    margin: 40px 20px;
    border-radius: 10px;
 }
