@@ -249,22 +249,10 @@ p {
 }
 .image-responsive-first img {
    width: 90%;
-   height: 25%;
+   height: 45%;
    object-fit: cover;
    margin: 40px 20px;
    border-radius: 10px;
-}
-
-@media (min-width: 768px) {
-
-   .image-responsive-first img {
-      width: 100%;
-      height: 50%;
-      object-fit: cover;
-      margin: 40px 20px;
-      border-radius: 10px;
-   }
-
 }
 
 .image-responsive img {
