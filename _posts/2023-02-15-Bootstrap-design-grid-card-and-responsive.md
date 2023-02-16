@@ -3,7 +3,7 @@ layout: post
 category: bootstrap
 ---
 
-When I created my personal blog from basic barebone jekyll, and slowly upgraded the clean-blog template. And then the requirement is how to display the homepage and link the pages. I re-design those
+When I created my personal blog from basic jekyll barebone, and slowly upgraded the clean-blog template. And then the requirement is how to display the homepage and link the pages. I re-design those
 
 {% include image.html
             img="images/Bootstrap-600x345.png"
