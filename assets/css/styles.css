@@ -239,9 +239,9 @@ p {
 
 /*! image responsive */
 .image-wrapper img {
-   width: 100%;
+   width: 90%;
    max-width: 480px;
-   height: 66%;
+   height: 50%;
    margin: 30px 10px;
    border-radius: 10px;
 }
