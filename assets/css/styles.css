@@ -251,10 +251,10 @@ p {
    width: 90%;
    max-width: 560px;
    height: 50%;
+   object-fit: cover;
    margin: 40px 20px;
    border-radius: 10px;
 }
-
 
 .image-responsive img {
    width: 100%;
