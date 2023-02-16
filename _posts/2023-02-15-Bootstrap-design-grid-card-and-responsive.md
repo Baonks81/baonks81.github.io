@@ -16,3 +16,5 @@ Luckily, clean-blog is coding from the bootstrap framework, a framework known fo
 Bootstrap is really a powerful framework for people who don't want to spend too much time manually responsive for each screen size for the frontend.
 
 {% include youtube.html id='ei5-5vcEPz8' %}
+
+
