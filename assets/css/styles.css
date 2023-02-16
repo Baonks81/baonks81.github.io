@@ -255,8 +255,8 @@ p {
 }
 
 .image-responsive-widescreen img {
-   width: 70%;
-   height: 25%;
+   width: 90%;
+   height: 20%;
    margin: 30px 10px;
    border-radius: 10px;
 }
