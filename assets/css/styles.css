@@ -239,7 +239,7 @@ p {
 
 /*! image responsive */
 .image-wrapper img {
-   width: 100%;
+   width: 90%;
    max-width: 480px;
    height: 50%;
    margin: 40px 20px;
