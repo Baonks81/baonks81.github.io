@@ -3,7 +3,7 @@ layout: post
 category: linuxmobile
 ---
 
-Because Android is a fork of GNU/Linux, that means only the kernel is used, the rest of the rootfs and components are added such as drivers, firmwares, google play and apps. Android need to optimize kernel parameters.
+Because Android is a fork of GNU/Linux, that means only the kernel is used, the rest of the rootfs and components are added such as drivers, firmwares, google play and apps. Android need to optimize kernel parameters, even Google engineers did but it's still suck parameters from stock
 
 {% include image.html
             img="images/Ktweak.jpg"
