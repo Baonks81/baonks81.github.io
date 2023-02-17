@@ -13,7 +13,7 @@ Because Android is a fork of GNU/Linux, that means only the kernel is used, the 
 
 rootfs of GNU/Linux is the same, in addition to the kernel just to boot, when it comes to rootfs, it is necessary to optimize kernel parameters. Fortunately, it is possible to get the parameter settings on Android to switch to GNU/Linux, let's just call Android using the downstream kernel, and GNU/Linux using the upstream kernel.
 
-When writing code and adding custom settings files in the kernel's kconfig, we can compile a file to boot but this file is still unusable, we need dtbo to correctly identify the device to be assembled into the boot, and must have the parameters number that tells the kernel the location of boot in the RAM table using the mkbooting tool.
+When we're writing code and adding custom settings files in the kernel's kconfig, we can compile a file to boot but this file is still unusable, we need dtbo to correctly identify the device to be assembled into the boot, and must have the parameters number that tells the kernel the location of boot in the RAM table using the mkbooting tool.
 
 To get to the rootfs stage, it is necessary to optimize kernel parameters, manage CPU/GPU core clocks and CPU temperature. This is why I learned ktweak on Android, written specifically for Oneplus 6/6T series, so I need to tweak a lot on Nvidia's Tegra SoC and Qualcomm's msm8916. Check out the differences in the links below.
 
