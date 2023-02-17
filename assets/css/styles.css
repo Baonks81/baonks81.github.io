@@ -273,6 +273,26 @@ p {
    border-radius: 10px;
 }
 
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+   .image-responsive-first img {
+      width: 90%;
+      height: 250px;
+      object-fit: cover;
+      margin: 40px 20px;
+      border-radius: 10px;
+   }
+
+   .image-responsive-widescreen img {
+      width: 90%;
+      height: 250px;
+      object-fit: cover;
+      margin: 40px 20px;
+      border-radius: 10px;
+   }
+}
+
 .text-my-own-color {
   color: #0d6efd !important; // Define your own color in your CSS
   text-decoration: none;
