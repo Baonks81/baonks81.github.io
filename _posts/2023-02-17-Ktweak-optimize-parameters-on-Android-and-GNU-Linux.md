@@ -5,6 +5,12 @@ category: linuxmobile
 
 Because Android is a fork of GNU/Linux, that means only the kernel is used, the rest of the rootfs and components are added such as drivers, firmwares, google play and apps. Need to optimize kernel parameters.
 
+{% include image.html
+            img="images/Ktweak.jpg"
+            title="ktweak optimize kernel params"
+            caption="Ktweak" 
+            url="https://github.com/tytydraco/KTweak" %}
+
 rootfs of GNU/Linux is the same, in addition to the kernel just to boot, when it comes to rootfs, it is necessary to optimize kernel parameters. Fortunately, it is possible to get the parameter settings on Android to switch to GNU/Linux, let's just call Android using the downstream kernel, and GNU/Linux using the upstream kernel.
 
 When writing code and adding custom settings files in the kernel's kconfig, we can compile a file to boot but this file is still unusable, we need dtbo to correctly identify the device to be assembled into the boot, and must have the parameters number that tells the kernel the location of boot in the RAM table using the mkbooting tool.
