@@ -53,7 +53,10 @@ layout: default
                        <div class="card-title">
                           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
                           <div class="sub-cat text-truncate">
-                             <span class="text-muted font-weight-lighter fst-italic"><i class="far fa-calendar-alt"></i> {{ post.date | date: "%d %b %Y" }} - <i class="far fa-list-alt"></i> {{ post.category }}</span>
+                             <span class="text-muted font-weight-lighter fst-italic">
+                                <i class="far fa-calendar-alt"></i> {{ post.date | date: "%d %b %Y" }} - 
+                                <i class="far fa-list-alt"></i> <a href="{{ site.baseurl }}{{ post.category }}">{{ post.category }}</a>
+                             </span>
                           </div>
                        </div>
                        <div class="text-left my-2">
