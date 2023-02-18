@@ -25,7 +25,7 @@ Automated Phone Testing
 - [Part 4]
 - [Part 5]
 
-Tracking from part 1 to part 3 is the test of hardware functions, part 4 is an extension to change the new kernel by connecting to the postmarketOS server containing images for the device included in the community support, to run the kernel. just built under APKBUILD on gitlab of postmarketos/pmaports.
+Tracking from part 1 to part 3 is the test of hardware functions, part 4 is an extension to change the new kernel by connecting to the postmarketOS server containing images for the device included in the community support, to run the kernel. It'd just built under APKBUILD on gitlab of postmarketos/pmaports.
 
 This is also a way to change and test the new kernel on Nexus 7 2012 grouper rev. E1565 runs ubuntu MATE or ArchLinux, openSUSE, although the change is manual. Now it is possible to write code that describes how to do it automatically.
 
