@@ -15,7 +15,7 @@ mainline kernel has /boot, /module, /firmware vendor etc.
 
 rootfs has x11 components, wayland, shell and software etc. We can update and upgrade.
 
-Every time a new kernel is compiled, the kernel developer has to reinstall the whole system, which is very time consuming. Since rootfs and vendor firmware are infrequently changed and are less dependent on new kernels, the goal is to reuse rootfs and only change /boot in the boot partition and /module in the rootfs. [Martijn Braam's blog] writes about setting up your own hardware and writing code to handle the new kernel change.
+Every new kernel is compiled, the kernel developers have to reinstall the whole system, which waste time. Since rootfs and vendor firmware are infrequently changed and are less dependent on new kernels, the goal is to reuse rootfs and only change /boot in the boot partition and /module in the rootfs. [Martijn Braam's blog] writes about setting up your own hardware and writing code to handle the new kernel change.
 
 Automated Phone Testing
 
