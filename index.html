@@ -17,7 +17,7 @@ layout: default
                          <div class="image-responsive-first">
                  {% when 5 %}
                       {% if post == site.posts.last %}
-                           <div class="col-md-12 col-lg-6 border-bottom bg-light">
+                           <div class="col-md-12 border-bottom bg-light">
                       {% else %}
                            <div class="col-md-6 col-lg-6 border-bottom bg-light">
                       {% endif %}
@@ -27,14 +27,19 @@ layout: default
                        <a href="{{ post.url | relative_url }}">
                          <div class="image-responsive-widescreen">
                  {% when 6 %}
-                      <div class="col-md-12 col-lg-6 border-bottom bg-light">
+                      {% if post == site.posts.last %}
+                           <div class="col-md-12 border-bottom bg-light">
+                      {% else %}
+                           <div class="col-md-12 col-lg-6 border-bottom bg-light">
+                      {% endif %}
+                      
                          <div class="card w-100 h-100 d-flex justify-content-center">
                             <div>
                        <a href="{{ post.url | relative_url }}">
                          <div class="image-responsive-widescreen">
                  {% else %}
                       {% if post == site.posts.last %}
-                           <div class="col-md-12 col-lg-4 border-bottom bg-light">
+                           <div class="col-md-12 border-bottom bg-light">
                       {% else %}
                            <div class="col-md-6 col-lg-4 border-bottom bg-light">
                       {% endif %}
