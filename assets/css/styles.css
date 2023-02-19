@@ -249,7 +249,7 @@ p {
    border-radius: 10px;
 }
 .image-responsive-first img {
-   width: 90%;
+   width: 100%;
    height: 480px;
    object-fit: cover;
    margin-top: 40px;
@@ -269,7 +269,7 @@ p {
 }
 
 .image-responsive-widescreen img {
-   width: 90%;
+   width: 100%;
    height: 320px;
    object-fit: cover;
    margin-top: 40px;
@@ -283,7 +283,7 @@ p {
 @media (max-width: 767.98px) {
 
    .image-responsive-first img {
-      width: 90%;
+      width: 100%;
       height: 360px;
       object-fit: cover;
       margin-top: 40px;
@@ -294,7 +294,7 @@ p {
    }
 
    .image-responsive-widescreen img {
-      width: 90%;
+      width: 100%;
       height: 360px;
       object-fit: cover;
       margin-top: 40px;
