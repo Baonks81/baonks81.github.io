@@ -103,8 +103,6 @@ Ubuntu:
 
 # apt -y install ubuntu-standard initramfs-tools language-pack-en
 
-
-
 Debian:
 
 # apt -y install locales initramfs-tools
