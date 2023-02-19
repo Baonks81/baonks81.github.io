@@ -10,8 +10,8 @@ layout: default
          {% for post in paginator.posts %}
             {% case forloop.index %}
                  {% when 1 %}
-                      <div class="col-md-6 col-lg-12 border-bottom bg-light">
-                         <div class="card flex-lg-row d-flex align-items-lg-center">
+                      <div class="col-md-12 col-lg-12 border-bottom bg-light">
+                         <div class="card flex-md-row d-flex align-items-md-center">
                             <div class="w-100 h-100">
                                <a href="{{ post.url | relative_url }}">
                                   <div class="image-responsive-first">
@@ -29,7 +29,7 @@ layout: default
                       {% if post == site.posts.last %}
                            <div class="col-md-12 border-bottom bg-light">
                       {% else %}
-                           <div class="col-md-6 col-lg-6 border-bottom bg-light">
+                           <div class="col-md-12 col-lg-6 border-bottom bg-light">
                       {% endif %}
                               <div class="card w-100 h-100 d-flex justify-content-center">
                                  <div>
