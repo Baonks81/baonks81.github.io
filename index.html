@@ -60,8 +60,10 @@ layout: default
                           </div>
                        </div>
                        <div class="text-left my-2">
-                          <p class="card-text">{{ post.content | truncatewords:10 | strip_html }}</p>
-                          <!-- a href="{{ post.url | relative_url  }}" class="btn btn-primary">Read More</a -->
+                          <p class="card-text">
+                             {{ post.content | truncatewords:10 | strip_html }}
+                             <a href="{{ post.url | relative_url  }}" class="class="text-my-own-color"">more</a>
+                          </p>
                        </div>
                     </div>
                  </div>
