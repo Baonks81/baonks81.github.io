@@ -283,7 +283,7 @@ p {
 @media (max-width: 767.98px) {
 
    .image-responsive-first img {
-      width: 95%;
+      width: 50%;
       height: 200px;
       object-fit: cover;
       margin-top: 40px;
@@ -294,7 +294,7 @@ p {
    }
 
    .image-responsive-widescreen img {
-      width: 95%;
+      width: 50%;
       height: 200px;
       object-fit: cover;
       margin-top: 40px;
