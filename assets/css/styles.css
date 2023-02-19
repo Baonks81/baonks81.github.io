@@ -279,7 +279,7 @@ p {
    border-radius: 10px;
 }
 
-/!* Small devices (landscape phones, less than 768px) */
+/*! Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 
    .image-responsive-first img {
