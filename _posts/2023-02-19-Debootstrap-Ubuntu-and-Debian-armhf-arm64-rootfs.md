@@ -159,7 +159,6 @@ Copy kernel folder to /media/rootfs
 
 # cp -r /var/* /media/rootfs/var/
 
-
 # umount /media/rootfs/proc
 
 # umount /media/rootfs/sys
