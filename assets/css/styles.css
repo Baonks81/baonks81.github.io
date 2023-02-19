@@ -252,7 +252,7 @@ p {
    width: 95%;
    height: 480px;
    object-fit: cover;
-   margin-top: 40px;
+   margin-top: 20px;
    margin-bottom: 40px;
    margin-left: 10px;
    margin-right: 20px;
@@ -272,7 +272,7 @@ p {
    width: 95%;
    height: 320px;
    object-fit: cover;
-   margin-top: 40px;
+   margin-top: 20px;
    margin-bottom: 10px;
    margin-left: 10px;
    margin-right: 20px;
@@ -283,10 +283,10 @@ p {
 @media (max-width: 767.98px) {
 
    .image-responsive-first img {
-      width: 50%;
+      width: 95%;
       height: 200px;
       object-fit: cover;
-      margin-top: 40px;
+      margin-top: 20px;
       margin-bottom: 10px;
       margin-left: 10px;
       margin-right: 20px;
@@ -294,10 +294,10 @@ p {
    }
 
    .image-responsive-widescreen img {
-      width: 50%;
+      width: 95%;
       height: 200px;
       object-fit: cover;
-      margin-top: 40px;
+      margin-top: 20px;
       margin-bottom: 10px;
       margin-left: 10px;
       margin-right: 20px;
