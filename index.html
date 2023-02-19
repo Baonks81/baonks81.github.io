@@ -10,7 +10,7 @@ layout: default
          {% for post in paginator.posts %}
             {% case forloop.index %}
                  {% when 1 %}
-                      <div class="col-md-12 col-lg-12 border-bottom bg-light">
+                      <div class="col-sm-6 col-md-12 col-lg-12 border-bottom bg-light">
                          <div class="card flex-md-row d-flex align-items-md-center">
                             <div class="w-100 h-100">
                                <a href="{{ post.url | relative_url }}">
@@ -19,7 +19,7 @@ layout: default
                       {% if post == site.posts.last %}
                            <div class="col-md-12 border-bottom bg-light">
                       {% else %}
-                           <div class="col-md-6 col-lg-6 border-bottom bg-light">
+                           <div class="col-sm-6 col-md-6 col-lg-6 border-bottom bg-light">
                       {% endif %}
                               <div class="card w-100 h-100"> <!-- md-5 shadow-sm" -->
                                  <div>
@@ -29,7 +29,7 @@ layout: default
                       {% if post == site.posts.last %}
                            <div class="col-md-12 border-bottom bg-light">
                       {% else %}
-                           <div class="col-md-12 col-lg-6 border-bottom bg-light">
+                           <div class="col-sm-6 col-md-12 col-lg-6 border-bottom bg-light">
                       {% endif %}
                               <div class="card w-100 h-100">
                                  <div>
@@ -39,7 +39,7 @@ layout: default
                       {% if post == site.posts.last %}
                            <div class="col-md-12 border-bottom bg-light">
                       {% else %}
-                           <div class="col-md-6 col-lg-4 border-bottom bg-light">
+                           <div class="col-sm-6 col-md-6 col-lg-4 border-bottom bg-light">
                       {% endif %}
                               <div class="card w-100 h-100">
                                  <div>
