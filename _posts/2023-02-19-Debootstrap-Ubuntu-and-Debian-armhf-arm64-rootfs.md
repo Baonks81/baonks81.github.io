@@ -179,5 +179,7 @@ Copy kernel folder to /media/rootfs
 We had image including /boot and /rootfs partition now. We can push image to device and fastboot flash boot.img to boot partition. Restart to testing
 That's all steps...
 
-The reference link: https://ubuntu-mate.community/t/bootstrapping-ubuntu-mate-for-an-armhf-base/556
+The reference link: [Bootstrapping Ubuntu MATE for an armhf base]
+
+[Bootstrapping Ubuntu MATE for an armhf base]: https://ubuntu-mate.community/t/bootstrapping-ubuntu-mate-for-an-armhf-base/556
 
