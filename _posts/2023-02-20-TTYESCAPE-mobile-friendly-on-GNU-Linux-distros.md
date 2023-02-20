@@ -13,9 +13,9 @@ Once I got the rootfs and mainline kernel running on my Nexus 7, I realized some
             caption="TTYEscape, buffyboard and hkdm daemon" 
             url="https://wiki.postmarketos.org/wiki/TTYescape" %}
 
-At that time, I wanted to have a virtual keyboard to input upgrade commands and install more login screens, the GUI had to add a keyboard and mouse for input, the process was too complicated. Since mobile-friendly must be virtualized and hardwares removed, as the mouse will be replaced by touch-screen/touch-gestures, the keyboard must have virtual keys instead.
+At that time, I wanted to have a virtual keyboard to input upgrade commands and install more login screens, the GUI. I had to add a keyboard and mouse hardwares, the process was too complicated. Since mobile-friendly must be virtualization and hardwares should removed, such as the mouse will be replaced by touch-screen/touch-gestures, the keyboard must have virtual/on-screen keyboards instead.
 
-After that, in the postmarketOS community (AlpineLinux) appeared [fbkeyboard], aiming to bring virtual keyboard to tty, written in C, but the keyboard layout is not friendly, quite similar to the keyboard of SailfishOS. Then [Caleb Connolly] dev, came up with [ttyescape], which combines triggerhappy and fbkeyboard, to launch the virtual keyboard when holding down Power button + 3 times the Volume Down button.
+After that, in the postmarketOS community (AlpineLinux) appeared [fbkeyboard], aiming to bring virtual keyboard to tty, written in C, but the keyboard layout is not friendly, quite similar to the keyboard of SailfishOS. Then [Caleb Connolly] dev, came up with [ttyescape], which combines triggerhappy and fbkeyboard, to launch the on-screen keyboard when holding down Power button + 3 times the Volume Down button.
 
 {% include image.html
             img="images/Nexus7_ttyescape.jpg"
