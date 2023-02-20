@@ -23,7 +23,7 @@ After that, in the postmarketOS community (AlpineLinux) appeared [fbkeyboard], a
             caption="Nexus 7 run ttyescape, buffyboard and hkdm daemon" 
             url="https://gitlab.com/baonks81/nexus-7-run-archlinux-native" %}
 
-Some time later, in the community, there was a hkdm daemon written by [elagost] dev in Rust, along with buffyboard. Now ttyescape combines hkdm and buffyboard again perfectly on GNU/Linux tty. So I took it from the ArchLinux AUR to compile for armhf on systemd, a simple wish now a reality.
+Some time later, in the community, there was a hkdm daemon written by [elagost] dev in Rust, along with buffyboard. Now ttyescape combines hkdm and buffyboard again perfectly on GNU/Linux tty. So I took it from the ArchLinux AUR to compile for armhf on systemd, a simple wish now come true.
 
 See those link below:
 
