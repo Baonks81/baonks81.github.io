@@ -3,7 +3,7 @@ layout: post
 category: linuxmobile
 ---
 
-Initially, when I stepped foot in GNU/Linux, I realized that the operating system only writes code to run on specific hardware that has not been optimized, even Android is not yet optimal.
+Initially, when I stepped foot in GNU/Linux, I realized that the operating system only writes code to run on specific hardware that has not been optimized, even Android isn't still optimal yet.
 
 Once I got the rootfs and mainline kernel running on my Nexus 7, I realized something. Most of the original distros like Debian(Ubuntu), ArchLinux, Fedora, OpenSUSE, Gentoo, Slackware, Linux From Scratch(LFS) etc. All boot into correct tty0 to tty9, depending on the distro's settings.
 
