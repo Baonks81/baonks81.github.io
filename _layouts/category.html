@@ -15,7 +15,7 @@ layout: about
      {% assign filtered_posts = site.posts | where: 'category', page.short_name %}
      {% for post in filtered_posts %}
           <li class="list-group-item">
-             <div class="box>
+             <div class="box">
                 <a href="{{ post.url }}"><i class="fa-solid fa-caret-right"></i> {{ post.title }}</a>
              </div>
           </li>
