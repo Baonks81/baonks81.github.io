@@ -335,7 +335,7 @@ p {
 
 .typing-demo {
   width: 8ch;
-  animation: typing 2s steps(8), blink .5s step-end forwards;
+  animation: typing 1s steps(8), blink .5s step-end forwards alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
