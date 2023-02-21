@@ -326,6 +326,18 @@ p {
 }
 
 /*! Animation typewriter text */
+.line {
+  position: relative;
+  top: 50%;
+  width: 16em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden; transform: translateY(-50%);
+}
+
 .anim-typewriter {
   animation: typewriter 4s steps(8) 1s 1 normal both,
   blinkTextCursor 500ms steps(8) infinite normal;
