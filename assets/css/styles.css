@@ -335,7 +335,7 @@ p {
 
 .typing-demo {
   width: 8ch;
-  animation: typing 2s steps(8), blink 1s step-end infinite normal;
+  animation: typing 2s steps(8), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -345,13 +345,13 @@ p {
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
     
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
