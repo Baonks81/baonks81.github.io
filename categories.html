@@ -23,7 +23,7 @@ title: Categories
       {% for category in site.categories %}
            <li class="list-group-item">
               <div class="box">
-                 <h2><i class="fa-solid fa-caret-right"></i> <a href="{{ category.url }}">{{ category.name }}</a></h2>
+                 <h2><a href="{{ category.url }}"><i class="fa-solid fa-caret-right"></i> {{ category.name }}</a></h2>
               </div>
 <!--
            <h3>{{ category.open_source }}</h3>
