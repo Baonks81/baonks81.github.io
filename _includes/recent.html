@@ -10,10 +10,14 @@
          {% assign forloop.index = forloop.index | plus:1 %}
        {% else %}
          {% assign countPost = countPost | plus:1 %}
-         <li class="list-group-item"><i class="fa-solid fa-caret-right"></i> <a href="{{ post.url }}">{{ post.title }}</a></li>
+         <div class="box">
+            <li class="list-group-item">
+               <i class="fa-solid fa-caret-right"></i> <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+         </div>
        {% endif %}
-         {% else %}
-           {% break %}
+     {% else %}
+          {% break %}
      {% endif %}
    {% endfor %}
   </ul>
