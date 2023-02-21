@@ -327,7 +327,7 @@ p {
 
 /*! Animation typewriter text */
 .wrapper {
-  height: 5vh;
+  height: 3vh;
   /*This part is important for centering*/
   display: grid;
   place-items: center;
