@@ -327,8 +327,8 @@ p {
 
 /*! Animation typewriter text */
 .anim-typewriter {
-  animation: typewriter 4s steps(40) 1s 1 normal both,
-  blinkTextCursor 500ms steps(40) infinite normal;
+  animation: typewriter 4s steps(8) 1s 1 normal both,
+  blinkTextCursor 500ms steps(8) infinite normal;
 }
 
 @keyframes typewriter {
