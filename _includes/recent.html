@@ -12,7 +12,7 @@
          {% assign countPost = countPost | plus:1 %}
          <div class="box">
             <li class="list-group-item">
-               <i class="fa-solid fa-caret-right"></i> <a href="{{ post.url }}">{{ post.title }}</a>
+               <a href="{{ post.url }}"><i class="fa-solid fa-caret-right"></i> {{ post.title }}</a>
             </li>
          </div>
        {% endif %}
