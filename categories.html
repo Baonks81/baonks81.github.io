@@ -22,7 +22,9 @@ title: Categories
    <ul class="list-group list-group-flush">
       {% for category in site.categories %}
            <li class="list-group-item">
-              <h2><i class="fa-solid fa-caret-right"></i> <a href="{{ category.url }}">{{ category.name }}</a></h2>
+              <div class="box">
+                 <h2><i class="fa-solid fa-caret-right"></i> <a href="{{ category.url }}">{{ category.name }}</a></h2>
+              </div>
 <!--
            <h3>{{ category.open_source }}</h3>
            <p>{{ category.content | markdownify }}</p>
