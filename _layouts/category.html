@@ -16,7 +16,9 @@ layout: about
      {% for post in filtered_posts %}
           <li class="list-group-item">
              <div class="box">
-                <a href="{{ post.url }}"><i class="fa-solid fa-caret-right"></i> {{ post.title }}</a>
+                <a href="{{ post.url }}">
+                   <i class="fa-solid fa-caret-right"></i> {{ post.title }}
+                </a>
              </div>
           </li>
      {% endfor %}
