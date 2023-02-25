@@ -65,7 +65,9 @@ snd
 Checking soc soundcard loaded:
 
 # sudo cat /proc/asound/card*/id
+
 ALC5642
+
 # sudo alsa force-reload
 
 ...
