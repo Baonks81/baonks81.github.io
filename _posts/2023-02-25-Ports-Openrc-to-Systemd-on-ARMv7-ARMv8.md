@@ -19,11 +19,11 @@ To ports from openrc to systemd, one must understand how the kernel boots to add
 
 The GNU/Linux had 3 part:
 
-- [device]-(company name)-<model name>
+- [device]-(company name)-(model name)
 
-- [firmware]-(company name)-<model name>
+- [firmware]-(company name)-(model name)
 
-- [linux]-(company name)-<model name>
+- [linux]-(company name)-(model name)
 
 You should find it out which the right way to ports and patching those on systemd.
 
