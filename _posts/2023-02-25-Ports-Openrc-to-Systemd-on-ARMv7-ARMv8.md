@@ -27,9 +27,72 @@ The GNU/Linux had 3 part:
 
 You should find it out which the right way to ports and patching those on systemd.
 
+[ALSA]
+
+```
+...
+
+# sudo lsmod | grep "^snd" | cut -d " " -f 1
+
+snd_soc_tegra30_i2s
+snd_soc_tegra30_ahub
+snd_soc_tegra_pcm
+snd_soc_tegra_machine
+snd_soc_core
+snd_pcm_dmaengine
+snd_pcm
+snd_timer
+snd
+
+# sudo nano /etc/modules
+
+snd_soc_rl6231
+snd_soc_rt5640
+snd_soc_tegra30_i2s
+snd_soc_tegra30_ahub
+snd_soc_tegra_pcm
+snd_soc_tegra_machine
+snd_soc_tegra_wm8903
+snd_soc_core
+snd_soc_wm8903
+snd_pcm_dmaengine
+snd_pcm
+snd_timer
+snd
+
+# sudo reboot
+
+Checking soc soundcard loaded:
+
+# sudo cat /proc/asound/card*/id
+ALC5642
+# sudo alsa force-reload
+
+...
+
+```
+
+FSTAB
+
+```
+...
+
+# sudo nano $D/etc/fstab
+
+LABEL=pmOS_root / ext4 defaults,noatime 0 0
+LABEL=pmOS_boot /boot ext2 defaults 0 1
+#tmpfs /tmp tmpfs defaults,noatime,mode=1777 0 0
+#tmpfs /var/tmp tmpfs defaults,noatime,mode=1777 0 0
+#tmpfs /var/spool tmpfs defaults,noatime,mode=1777 0 0
+tmpfs /var/log tmpfs defaults,noatime,mode=0755 0 0
+
+...
+
+```
+
 [postmarketOS]: https://gitlab.com/postmarketos/pmaports
 [xda-developers]: https://forum.xda-developers.com/t/discontinued-linux-on-the-acer-iconia-tab-a500-2022-edition.4136023/post-83103991
 [device]: https://gitlab.com/postmarketOS/pmaports/-/tree/master/device/testing/device-asus-grouper
 [firmware]: https://gitlab.com/postmarketOS/pmaports/-/tree/master/device/testing/firmware-asus-grouper
 [linux]: https://gitlab.com/postmarketOS/pmaports/-/tree/master/device/testing/linux-postmarketos-grate
-
+[ALSA]: https://forum.ubuntuusers.de/topic/medion-akoya-e2228t/2/
