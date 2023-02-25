@@ -77,7 +77,7 @@ FSTAB
 ```
 ...
 
-# sudo nano $D/etc/fstab
+# sudo nano /etc/fstab
 
 LABEL=pmOS_root / ext4 defaults,noatime 0 0
 LABEL=pmOS_boot /boot ext2 defaults 0 1
