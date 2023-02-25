@@ -15,7 +15,7 @@ I was lucky to be the first to reach the gitlab of [postmarketOS] branch pmaport
 
 Some mainline kernels are built specifically for chipsets with or without some modules built into the kernel, but some basic modules such as sound, display panel, sensors are integrated into the kernel as integral components.
 
-To ports from openrc to systemd, one must understand how the kernel boots to add partition mounts to /etc/fstab as required by systemd. Also have to declare loading sound modules and sensors in /etc/modules to tell the kernel to load at booting, install alse-utils and iio-sensors-proxy to use these modules. That's basic configuration and more add-ons.
+To ports from openrc to systemd, one must understand how the kernel boots to add partition mounts to /etc/fstab as required by systemd. Also have to declare loading sound modules and sensors in /etc/modules to tell the kernel to load at booting, install alsa-utils and iio-sensors-proxy to use these modules. That's basic configuration and more add-ons.
 
 The GNU/Linux had 3 part:
 
