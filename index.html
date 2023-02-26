@@ -10,7 +10,7 @@ layout: default
          {% for post in paginator.posts %}
             {% case forloop.index %}
                  {% when 1 %}
-                      <div class="col-sm-12 col-md-12 col-lg-12 border-bottom bg-light">
+                      <div class="col-sm-6 col-md-12 col-lg-12 border-bottom bg-light">
                          <div class="card flex-md-row d-flex align-items-md-center">
                             <div class="w-100 h-100">
                                <a href="{{ post.url | relative_url }}">
