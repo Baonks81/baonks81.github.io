@@ -3,7 +3,7 @@ layout: post
 category: linuxmobile
 ---
 
-When Android and ARM were in their infancy, there was still no definition of block compression, decompression according to the block standard to normal, to copy to sdcard. Just use the image extraction tools on your PC to eMMC or sdcard to run Android operating system.
+When Android and ARM were in early time, there was still no definition of block compression, decompression according to the block standard to normal, to copy to sdcard. Just use the image extraction tools on your PC to eMMC or sdcard to run Android operating system.
 
 {% include image.html
             img="images/android-arm-arm64-x86-1280x600.png"
