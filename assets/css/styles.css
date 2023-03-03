@@ -305,11 +305,11 @@ p {
    }
 }
 
-/*! X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+/*! XX-Large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) {
    .image-responsive-first img {
       width: 95%;
-      height: 480px;
+      height: 640px;
       object-fit: cover;
       margin-top: 50px;
       margin-bottom: 10px;
@@ -320,7 +320,7 @@ p {
 
    .image-responsive-widescreen img {
       width: 95%;
-      height: 480px;
+      height: 640px;
       object-fit: cover;
       margin-top: 50px;
       margin-bottom: 10px;
