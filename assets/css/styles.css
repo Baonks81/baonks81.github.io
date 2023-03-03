@@ -305,6 +305,31 @@ p {
    }
 }
 
+/*! X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+   .image-responsive-first img {
+      width: 95%;
+      height: 480px;
+      object-fit: cover;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      margin-right: 20px;
+      border-radius: 10px;
+   }
+
+   .image-responsive-widescreen img {
+      width: 95%;
+      height: 480px;
+      object-fit: cover;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      margin-right: 20px;
+      border-radius: 10px;
+   }
+}
+
 /*! change color hyperlink */
 .text-my-own-color {
   color: #0d6efd !important; // Define your own color in your CSS
