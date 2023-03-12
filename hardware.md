@@ -54,3 +54,14 @@ title: Hardware
 - eMMC: 16GB
 - SDcard: working but no sdcard
 - OS: Phosh on postmarketOS
+
+
+------------------------------
+
+- Name: Samsung Galaxy Tab A 8.0 2015 (code-name: samsung-gt58lte)
+- CPU: SoC MSM8916
+- RAM: 2GB
+- GPU: Adreno 306
+- eMMC: 16GB
+- SDcard: 128GB
+- OS: Phosh on postmarketOS
