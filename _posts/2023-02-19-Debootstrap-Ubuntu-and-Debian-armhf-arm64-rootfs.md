@@ -26,9 +26,9 @@ You can use directory to create rootfs and then compress tar.gz or use loop to c
 
 # sudo modprobe loop
 
-loop0
-
 # sudo losetup -f
+
+loop0
 
 # sudo losetup /dev/loop0 /path/to/image
 
