@@ -9,8 +9,8 @@ When I use a device running Android, iOS, GNU/Linux, Windows, I feel like there 
 
 {% include image.html
             img="images/Code-Reverse-Engineering-min.png"
-            title="Reverse Engine ARM configure"
-            caption="Reverse Engine ARM configure" 
+            title="Reverse Engine ARM configuration"
+            caption="Reverse Engine ARM configuration" 
             url="https://gitlab.com/baonks81/nexus-7-2012-grouper-android-7.1.2-kernel-parameters-and-virtual-memories/-/blob/main/android7.1.2/ktweak" %}
 
 From some work on different devices, I've come up with an almost generic configuration for SoCs including Nvidia's Tegra, Qualcomm's SnapDragon, Samsung's Exynos:
