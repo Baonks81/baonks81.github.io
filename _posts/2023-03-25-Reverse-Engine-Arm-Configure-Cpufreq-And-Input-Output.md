@@ -15,7 +15,7 @@ When I use a device running Android, iOS, GNU/Linux, Windows, I feel like there 
 
 From some work on different devices, I've come up with an almost generic configuration for SoCs including Nvidia's Tegra, Qualcomm's SnapDragon, Samsung's Exynos:
 
-- The legend of using swap and zram is real
+- The legendary of using swap and zram is real
 
 - CPU clock is only about 50% - 66% of max frequency
 
