@@ -24,3 +24,5 @@ From some work on different devices, I've come up with an almost generic configu
 - Swap capacity should be x2 - x4 of zram capacity
 
 - Later devices with a clock speed of over 2Ghz should also be set at 800Mhz - 1Ghz foreach 4 - 8 cores because the temperature limit is about 45-50 degrees Celsius. When it equipped with a cooling fan, the new configuration will be stable.
+
+- Optimizing kernel vm parameters and governor frequency
