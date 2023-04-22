@@ -15,7 +15,7 @@ For example, a device that is using stock Android, when installing LineageOS or 
             caption="Reverse Engine ARM configuration" 
             url="https://gitlab.com/baonks81/nexus-7-2012-grouper-android-7.1.2-kernel-parameters-and-virtual-memories/-/blob/main/android7.1.2/ktweak" %}
 
-From some work on different devices, I've come up with an almost generic configuration for SoCs including Nvidia's Tegra, Qualcomm's SnapDragon, Samsung's Exynos:
+From some working on different devices, I've come up with an almost generic configuration for SoCs including Nvidia's Tegra, Qualcomm's SnapDragon, Samsung's Exynos:
 
 - The legendary of using swap and zram is real
 
