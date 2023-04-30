@@ -14,6 +14,8 @@ After Google, Apple and smartphone companies successfully built geo location-bas
 Broadly speaking, other companies have also taken user information like Qualcomm, worryingly even more violently. So we are wary of newer devices from Google, Apple, Xiaomi, Android smartphone manufacturers, etc.
 
 Reference link Martijn Braam' [NitroKey disappoints me]
+[Smartphones With Popular Qualcomm Chip Secretly Share Private Information With US Chip-Maker]
 
 [NitroKey disappoints me]: https://blog.brixit.nl/nitrokey-dissapoints-me/
-[https://izatcloud.net]: https://izatcloud.net
+[https://izatcloud.net]: https://izatcloud.net/
+[Smartphones With Popular Qualcomm Chip Secretly Share Private Information With US Chip-Maker]: https://www.nitrokey.com/news/2023/smartphones-popular-qualcomm-chip-secretly-share-private-information-us-chip-maker/
