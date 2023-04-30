@@ -3,7 +3,7 @@ layout: post
 category: linuxmobile
 ---
 
-After Google, Apple and smartphone companies successfully built location-based advertising using A-GPS. Currently, more devices using Qualcomm technology have been detected that send location (GPS) and HTTP information to the [https://izatcloud.net] service page of Qualcomm SDM630 to get user information, and not always encrypted. The purpose of optimizing the profit margin limit.
+After Google, Apple and smartphone companies successfully built geo location-based advertising using A-GPS. Currently, more devices using Qualcomm technology have been detected that send location (GPS) and HTTP information to the [https://izatcloud.net] service page of Qualcomm SDM630 to get user information, and not always encrypted. The purpose of optimizing the profit margin limit.
 
 {% include image.html
             img="images/They-did-it.jpg"
