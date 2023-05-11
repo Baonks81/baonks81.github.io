@@ -49,7 +49,7 @@ layout: default
 						<div class="card-body-hos">
 							<h1 class="card-title-hos">{{ post.title }}</h1>
 							<p class="card-subtitle-hos">{{ post.date | date: "%d %b %Y" }}</p>
-							<p class="card-info-hos">{{ post.content | truncatewords:10 | strip_html }}</p>
+							<p class="card-info-hos">{{ post.content | truncatewords:5 | strip_html }}</p>
 							<button class="card-btn-hos"><a href="{{ post.url | relative_url }}">Read more</a></button>
 						</div>
 					</div>
