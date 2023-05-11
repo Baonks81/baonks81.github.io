@@ -270,7 +270,7 @@ p {
 
 .image-responsive-widescreen img {
    width: 95%;
-   height: 240px;
+   height: 280px;
    object-fit: cover;
    margin-top: 50px;
    margin-bottom: 10px;
@@ -284,7 +284,7 @@ p {
 
    .image-responsive-first img {
       width: 95%;
-      height: 200px;
+      height: 240px;
       object-fit: cover;
       margin-top: 50px;
       margin-bottom: 10px;
@@ -295,7 +295,7 @@ p {
 
    .image-responsive-widescreen img {
       width: 95%;
-      height: 200px;
+      height: 240px;
       object-fit: cover;
       margin-top: 50px;
       margin-bottom: 10px;
