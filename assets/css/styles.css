@@ -4689,6 +4689,21 @@ textarea.form-control-lg {
   /*! border: 1px solid rgba(0, 0, 0, 0.125); */
   border: none;
 }
+
+.card-hos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  /*! border: 1px solid rgba(0, 0, 0, 0.125); */
+  border: 8px solid #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -4713,13 +4728,64 @@ textarea.form-control-lg {
   padding: 1rem 1rem;
 }
 
+.card-body-hos {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #1f3d4738;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #fff;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.card-hos:hover .card-body-hos{
+  right: 0;
+}
+
 .card-title {
   margin-bottom: 0.5rem;
+}
+
+.card-title-hos {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .card-subtitle {
   margin-top: -0.25rem;
   margin-bottom: 0;
+}
+
+.card-subtitle-hos {
+  margin-top: -0.25rem;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.card-btn-hos {
+  color: #1f3d47;
+  background: #8fabba;
+  padding: 10px 20px;
+  width: 120px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .card-text:last-child {
@@ -4767,6 +4833,16 @@ img-overlay {
 .card-img-top,
 .card-img-bottom {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card-info{
+  font-size: 14px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
 }
 
 .card-group > .card {
