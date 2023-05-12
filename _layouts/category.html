@@ -29,7 +29,7 @@ layout: default
 		<div class="row g-0">
 			{% assign filtered_posts = site.posts | where: 'category', page.short_name %}
 			{% for post in filtered_posts %}
-				<div class="col-md-6 border-bottom bg-light">
+				<div class="col-md-6 col-xl-4 border-bottom bg-light">
 					<div class="card-hos w-100 h-100">
 						<div class="image-responsive-widescreen">
 							{% assign foundImage = 0 %}
