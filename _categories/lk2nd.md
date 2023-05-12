@@ -7,4 +7,10 @@ subheading: This is what I contributed
 permalink: /lk2nd/
 ---
 
-Secondary Little Kernel (lk2nd) includes kernel and display panel for msm8916 devices
+Secondary Little Kernel (lk2nd) includes kernel and display panel for msm8916 devices.
+
+{% include image.html
+            img="images/Lk2nd.jpg"
+            title="Secondary little kernel" 
+            caption="lk2nd msm8916"
+            url="https://github.com/msm8916-mainline/lk2nd" %}
