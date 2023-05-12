@@ -1,39 +1,36 @@
 ---
-layout: about
+layout: default
 title: Categories
 ---
 
-<!-- div class="row mt-2 g-4">
-   <div class="col-md-3">
-      <div class="card p-2">
-         <div class="d-flex justify-content-between align-items-center p-2">
-            {% for category in site.categories %}
-                 <div class="flex-column lh-1 imagename">
-                    <i class="fa-solid fa-caret-right"></i> <a href="{{ category.url }}"><span> {{ category.name }} </span></a>
-                 </div>
-                 <div><img src={{" assets/favicon.ico" | relative_url }} height="100" width="100" /></div>
-             {% endfor %}
-         </div>
-      </div>
-   </div>
-</div -->
-
-<div class="card">
-   <ul class="list-group list-group-flush">
-      {% for category in site.categories %}
-           <li class="list-group-item">
-              <div class="box">
-                 <h2>
-                    <a href="{{ category.url }}">
-                       <i class="fa-solid fa-caret-right"></i> {{ category.name }}
-                    </a>
-                 </h2>
-              </div>
-<!--
-              <h3>{{ category.open_source }}</h3>
-              <p>{{ category.content | markdownify }}</p>
--->
-           </li>
-      {% endfor %}
-   </ul>
+<div class="content">
+	<div class="container-fluid">
+		<div class="row g-0">
+			{% for category in site.categories %}
+				<div class="col-md-6 border-bottom bg-light">
+					<div class="card-hos w-100 h-100">
+						<div class="image-responsive-widescreen">
+							{% assign foundImage = 0 %}
+                        	{% assign images = category.content | split:"<img " %}
+                       		{% for image in images %}
+                               {% if image contains 'src' %}
+                                    {% if foundImage == 0 %}
+                                         {% assign html = image | split:"/>" | first %}
+                                         <img class="card-img-top img-fluid rounded" {{ html }} />
+                                         {% break %}
+                                    {% endif %}
+                               {% endif %}
+                          	{% endfor %}
+						</div>
+						<div class="card-body-hos">
+							<h1 class="card-title-hos">
+								<a href="{{ category.url }}">{{ category.name }}</a>
+							</h1>
+							<p class="card-subtitle-hos">{{ category.content | truncatewords:7 | markdownify }}</p>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 </div>
