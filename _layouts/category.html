@@ -25,34 +25,34 @@ layout: default
 </div> -->
 
 <div class="content">
-	<div class="container-fluid">
-		<div class="row g-0">
-			{% assign filtered_posts = site.posts | where: 'category', page.short_name %}
-			{% for post in filtered_posts %}
-				<div class="col-md-6 col-xl-4 border-bottom bg-light">
-					<div class="card-hos w-100 h-100">
-						<div class="image-responsive-widescreen">
-							{% assign foundImage = 0 %}
-                        	{% assign images = post.content | split:"<img " %}
-                       		{% for image in images %}
-                               {% if image contains 'src' %}
-                                    {% if foundImage == 0 %}
-                                         {% assign html = image | split:"/>" | first %}
-                                         <img class="card-img-top img-fluid rounded" {{ html }} />
-                                         {% break %}
-                                    {% endif %}
-                               {% endif %}
-                          	{% endfor %}
-						</div>
-						<div class="card-body-hos">
-							<h1 class="card-title-hos">{{ post.title }}</h1>
-							<p class="card-subtitle-hos">{{ post.date | date: "%d %b %Y" }}</p>
-							<p class="card-info-hos">{{ post.content | truncatewords:5 | strip_html }}</p>
-							<button class="card-btn-hos"><a href="{{ post.url | relative_url }}">Read more</a></button>
-						</div>
-					</div>
-				</div>
-			{% endfor %}
+    <div class="container-fluid">
+	<div class="row g-0">
+	    {% assign filtered_posts = site.posts | where: 'category', page.short_name %}
+	    {% for post in filtered_posts %}
+	    <div class="col-md-6 col-xl-4 border-bottom bg-light">
+	        <div class="card-hos w-100 h-100">
+		    <div class="image-responsive-widescreen">
+		        {% assign foundImage = 0 %}
+                        {% assign images = post.content | split:"<img " %}
+                       	{% for image in images %}
+                              {% if image contains 'src' %}
+                                   {% if foundImage == 0 %}
+                                        {% assign html = image | split:"/>" | first %}
+                                        <img class="card-img-top img-fluid rounded" {{ html }} />
+                                        {% break %}
+                                   {% endif %}
+                              {% endif %}
+                        {% endfor %}
+		    </div>
+		    <div class="card-body-hos">
+			<h1 class="card-title-hos">{{ post.title }}</h1>
+			<p class="card-subtitle-hos">{{ post.date | date: "%d %b %Y" }}</p>
+			<p class="card-info-hos">{{ post.content | truncatewords:5 | strip_html }}</p>
+			  <button class="card-btn-hos"><a href="{{ post.url | relative_url }}">Read more</a></button>
+		   </div>
 		</div>
+	    </div>
+	    {% endfor %}
 	</div>
+    </div>
 </div>
