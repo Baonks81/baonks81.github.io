@@ -1,10 +1,17 @@
-<header class="masthead" style="background-image: url({{ 'assets/images/home-bg.jpg' | relative_url }})">
+{% case page.title %}
+	{% when 'Categories' %}
+          <header class="masthead" style="background-image: url({{ 'assets/images/02.jpg' | relative_url }})">
+	{% when 'Project' %}
+		<header class="masthead" style="background-image: url({{ 'assets/images/01.jpg' | relative_url }})">
+	{% else %}
+		<header class="masthead" style="background-image: url({{ 'assets/images/home-bg.jpg' | relative_url }})">
+{% endcase %}
   <div class="container position-relative px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-7">
         <div class="site-heading">
-          <h1>My Book</h1>
-          <span class="subheading">A Techical Pages</span>
+          <h1>{{ page.title }}</h1>
+          <span class="subheading">{{ page.subheading }}</span>
         </div>
       </div>
     </div>
