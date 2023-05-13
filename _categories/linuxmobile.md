@@ -10,7 +10,7 @@ permalink: /linuxmobile/
 GNU/Linux news, compatible apps and system on chipset hacking.
 
 {% include image.html
-            img="images/Ktweak.jpg"
-            title="ktweak optimize kernel params"
-            caption="Ktweak" 
-            url="https://github.com/tytydraco/KTweak" %}
+            img="images/20230509_112432.jpg"
+            title="Linux Mobile"
+            caption="GNU/Linux Mobile" 
+%}
