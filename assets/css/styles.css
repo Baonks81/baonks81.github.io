@@ -4774,7 +4774,7 @@ textarea.form-control-lg {
 }
 
 .card-hos:hover .card-body-ho {
-  bottom: 0;
+  bottom: -50%;
 }
 
 .card-title {
