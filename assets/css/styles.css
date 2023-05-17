@@ -331,12 +331,6 @@ p {
    }
 }
 
-/*! sticky navigation bar */
-.primary-header {
-   position: sticky !important;
-   top: 0 !important;
-   z-index: 9999 !important;
-}
 
 /*! change color hyperlink */
 .text-my-own-color {
@@ -4209,7 +4203,9 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
