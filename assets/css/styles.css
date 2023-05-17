@@ -310,7 +310,7 @@ p {
 @media (min-width: 1400px) {
    .image-responsive-first img {
       width: 95%;
-      height: 400px;
+      height: 480px;
       object-fit: cover;
       margin-top: 50px;
       margin-bottom: 10px;
@@ -321,7 +321,7 @@ p {
 
    .image-responsive-widescreen img {
       width: 95%;
-      height: 400px;
+      height: 480px;
       object-fit: cover;
       margin-top: 50px;
       margin-bottom: 10px;
@@ -330,6 +330,13 @@ p {
       border-radius: 10px;
    }
 }
+
+/*! sticky navigation bar */
+.primary-header {
+   padding: 1rem;
+   position: sticky;
+   top: 0;
+ }
 
 /*! change color hyperlink */
 .text-my-own-color {
