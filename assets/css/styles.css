@@ -333,9 +333,9 @@ p {
 
 /*! sticky navigation bar */
 .primary-header {
-   padding: 1rem;
-   position: sticky;
-   top: 0;
+   padding: 1rem !important;
+   position: sticky !important;
+   top: 0 !important;
 }
 
 /*! change color hyperlink */
