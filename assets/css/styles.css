@@ -335,7 +335,8 @@ p {
 .primary-header {
    padding: 1rem;
    position: sticky !important;
-   display: inline !important;
+   display: flex !important;
+   overflow: auto !important;
    top: 0;
 }
 
