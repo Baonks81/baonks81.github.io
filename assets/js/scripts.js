@@ -34,13 +34,13 @@ window.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", function(){
   window.addEventListener('scroll', function() {
       if (window.scrollY > 50) {
-        document.getElementById('mainNav').classList.add('fixed-top', 'is-fixed');
+        document.getElementById('mainNav').classList.add('fixed-top', 'is-visible', 'is-fixed');
         // add padding top to show content behind navbar
-        // navbar_height = document.querySelector('.navbar').offsetHeight;
-        navbar_height = document.getElementById('mainNav').clientHeight;
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        //navbar_height = document.getElementById('mainNav').clientHeight;
         document.body.style.paddingTop = navbar_height + 'px';
       } else {
-        document.getElementById('mainNav').classList.remove('fixed-top', 'is-fixed');
+        document.getElementById('mainNav').classList.remove('fixed-top', 'is-visible', 'is-fixed');
          // remove padding top from body
         document.body.style.paddingTop = '0';
       } 
