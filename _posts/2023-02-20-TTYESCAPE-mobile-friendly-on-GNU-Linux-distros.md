@@ -25,7 +25,7 @@ After that, in the postmarketOS community (AlpineLinux) appeared [fbkeyboard], a
 
 Some time later, in the community, there was a hkdm daemon written by [elagost] dev in Rust, along with buffyboard. Now ttyescape combines hkdm and buffyboard again perfectly on GNU/Linux tty. So I took it from the ArchLinux AUR to compile for armhf on systemd, a simple wish now come true.
 
-See those link below:
+Checking these links below:
 
 - [ArchLinux dreemurrs-embedded]
 - [hkdm daemon on postmarketOS Gitlab]
