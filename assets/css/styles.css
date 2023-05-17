@@ -331,7 +331,6 @@ p {
    }
 }
 
-
 /*! change color hyperlink */
 .text-my-own-color {
   color: #0d6efd !important; // Define your own color in your CSS
@@ -4203,9 +4202,9 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 9999;
+  z-index: 100;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
