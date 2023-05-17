@@ -333,11 +333,10 @@ p {
 
 /*! sticky navigation bar */
 .primary-header {
-   padding: 1rem;
+   padding: 1rem !impprtant;
    position: sticky !important;
-   display: flex !important;
-   overflow: auto !important;
-   top: 0;
+   z-index: 100 !important;
+   top: 0 !important;
 }
 
 /*! change color hyperlink */
