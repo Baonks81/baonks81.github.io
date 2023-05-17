@@ -333,7 +333,6 @@ p {
 
 /*! sticky navigation bar */
 .primary-header {
-   padding: 1rem !impprtant;
    position: sticky !important;
    top: 0 !important;
    z-index: 9999 !important;
