@@ -11432,8 +11432,7 @@ blockquote {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    /* top: -83px; */
-    top: 0px;
+    top: -83px;
     transition: transform 0.2s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.9);
