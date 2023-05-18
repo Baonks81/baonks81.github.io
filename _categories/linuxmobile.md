@@ -3,6 +3,7 @@ short_name: linuxmobile
 name: Linux Mobile
 open_source: GNU/Linux on Mobile
 title: Project
+subtitle: Project
 subheading: This is what I contributed
 permalink: /linuxmobile/
 ---
