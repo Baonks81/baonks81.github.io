@@ -3,6 +3,7 @@ short_name: tegra
 name: Nvidia Tegra 
 open_source: Grate driver for Tegra
 title: Project
+subtitle: Project
 subheading: This is what I contributed
 permalink: /tegra/
 ---
