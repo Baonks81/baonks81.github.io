@@ -331,6 +331,16 @@ p {
    }
 }
 
+/* Scrolling recent posts */
+/*! X-Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+   .bsign {
+      position: fixed !importtant;
+      top: 0 !important;
+      height: 100dvh !important;
+   }
+}
+
 /*! change color hyperlink */
 .text-my-own-color {
   color: #0d6efd !important; // Define your own color in your CSS
