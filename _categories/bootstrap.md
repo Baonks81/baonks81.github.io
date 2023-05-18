@@ -3,6 +3,7 @@ short_name: bootstrap
 name: Bootstrap Tool and Responsive Website
 open_source: Design Website Tool
 title: Project
+subtitle: Project
 subheading: This is what I contributed
 permalink: /bootstrap/
 ---
