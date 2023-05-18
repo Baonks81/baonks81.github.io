@@ -340,6 +340,14 @@ p {
   color: #0085A1 !important; // Define your own color's darkening/lightening in your CSS
 }
 
+.text-my-color {
+  color: #ffffff !important; // Define your own color in your CSS
+  text-decoration: none;
+}
+.text-my-color:hover, .text-my-own-color:active {
+  color: #0085A1 !important; // Define your own color's darkening/lightening in your CSS
+}
+
 /*! div box hover zoom effect */
 .box {
   transition: 1s;
