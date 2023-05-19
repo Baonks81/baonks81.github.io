@@ -4880,6 +4880,13 @@ img-overlay {
   font-weight: 400;
 }
 
+.card-info-hos{
+  font-size: 12px;
+  line-height: 15px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
 .card-group > .card {
   margin-bottom: 0.75rem;
 }
