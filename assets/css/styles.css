@@ -4804,7 +4804,7 @@ textarea.form-control-lg {
 .card-subtitle-hos {
   margin-top: -0.25rem;
   margin-bottom: 0;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-size: 10px;
   font-weight: 300;
 }
