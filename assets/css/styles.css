@@ -4887,6 +4887,28 @@ img-overlay {
   font-weight: 400;
 }
 
+@media (min-width: 992px) {
+  .card-title-hos {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .card-subtitle-hos {
+    margin-top: -0.25rem;
+    margin-bottom: 0;
+    /* text-transform: capitalize; */
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .card-info-hos{
+    font-size: 14px;
+    line-height: 15px;
+    margin: 40px 0;
+    font-weight: 400;
+  }
+}
+
 .card-group > .card {
   margin-bottom: 0.75rem;
 }
