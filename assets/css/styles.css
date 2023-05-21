@@ -4887,7 +4887,7 @@ img-overlay {
   font-weight: 400;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .card-title-hos {
     margin-bottom: 0.5rem;
     text-transform: uppercase;
