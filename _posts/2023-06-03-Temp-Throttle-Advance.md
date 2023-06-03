@@ -12,7 +12,11 @@ You must determine the cpu clock range that the device runs stably with a temper
 ```
 ...
 
-/sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies for Android. Or /sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies
+Android:
+/sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies 
+
+GNU/Linux:
+/sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies
 
 ...
 ```
