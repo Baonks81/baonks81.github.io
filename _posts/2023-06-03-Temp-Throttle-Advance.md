@@ -10,7 +10,7 @@ Manufacturer will write additional components to reduce pulses, monitor cpu heat
 You must determine the cpu clock range that the device runs stably with a temperature of 38-43 Celsus degrees, and a pulse to boost the device to run. It's all in /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies for Android. Or /sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies
 
 {% include image.html
-            img="images/20230509_112432.jpg"
+            img="images/Python-Automation.jpg"
             title="ARM CPU Temp-Throttle"
             caption="ARM CPU Temp-Throttle" %}
 
