@@ -7,7 +7,15 @@ When I went through writing cpu throttle code for tegra, msm8916, msm8974, sdm84
 
 Manufacturer will write additional components to reduce pulses, monitor cpu heat, etc. merge modules into Android. GNU/Linux is the opposite, developers just write the code for the kernel to run, and the optimization is done by the user
 
-You must determine the cpu clock range that the device runs stably with a temperature of 38-43 Celsus degrees, and a pulse to boost the device to run. It's all in /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies for Android. Or /sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies
+You must determine the cpu clock range that the device runs stably with a temperature of 38-43 Celsus degrees, and a pulse to boost the device to run. It's all in 
+
+```
+...
+
+/sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies for Android. Or /sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies
+
+...
+```
 
 {% include image.html
             img="images/Python-Automation.jpg"
