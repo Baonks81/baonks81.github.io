@@ -149,7 +149,6 @@ file /bin/busybox               /root/initramfs/bins/bin/busybox        755 0 0
 file /bin/mount                 /root/initramfs/bins/bin/mount          755 0 0
 
 slink /bin/findfs                       /bin/busybox                    777 0 0
-slink /bin/ln                           /bin/busybox                    777 0 0
 slink /sbin/switch_root                 /bin/busybox                    777 0 0
 # libraries required by /sbin/fsck.ext4 and /sbin/fsck
 # The /lib -> /lib64 symlink is mostly harmless but its not right on arm64
