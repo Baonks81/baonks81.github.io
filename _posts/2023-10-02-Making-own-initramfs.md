@@ -5,7 +5,7 @@ category: linuxmobile
 
 Usually people reading Initramfs or initrd will immediately think it is the root file-sytem. Actually it only runs temporarily after the kernel boots and resets PID 1, initrd does not load external modules, initramfs is a small file-system that allows the kernel to show where to store real root file-system and firmware, the path to ext-modules
 
-Initrd is a ramdisk that supports booting and switching_root to the real root filesystem. Usually /sbin/initrd
+Initrd is a ramdisk that supports booting and switching to the real root filesystem. Usually /sbin/initrd
 
 Initramfs is a mini root file-system, so it will be created in the file initramfs.cpio.gz including initramfs.list (used to declare a list of files and directories running in initramfs), later it will also be separated into init_function.sh to save the files. The functions are written in the init file, shortening the init. The initramfs.cpio.gz structure is as follows:
 
