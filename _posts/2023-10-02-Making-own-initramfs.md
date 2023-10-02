@@ -199,6 +199,9 @@ root # find . -print0 | cpio --null --create --verbose --format=newc > initramfs
 ...
 ```
 
+The auto-generate initramfs tools from distro: dracut, mkinitcpio, initramfs-tools, postmarketos-mkinitfs
+
+
 Reference links:
 
 https://wiki.gentoo.org/wiki/Initramfs
