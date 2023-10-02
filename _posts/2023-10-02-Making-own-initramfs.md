@@ -170,7 +170,7 @@ Or using mainline kernel tools:
 ```
 ...
 
-linux/usr/gen_initramfs.sh -h ## để tự phát sinh initramfs.cpio
+linux/usr/gen_initramfs.sh -h ## auto generate initramfs.cpio
 
 linux/usr/gen_initramfs.sh -o ../initramfs.cpio /initramfs
 
