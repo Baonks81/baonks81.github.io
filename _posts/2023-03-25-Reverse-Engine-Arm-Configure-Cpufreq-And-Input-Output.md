@@ -21,9 +21,9 @@ From some working on different devices, I've come up with an almost generic conf
 
 - CPU clock is only about 50% - 66% of max frequency
 
-- zram capacity should be 10% - 20% of RAM capacity
+- zram capacity should be 10% - 25% of RAM capacity
 
-- Swap capacity should be x2 - x4 of zram capacity
+- Swap capacity should be x1 - x2 of zram capacity
 
 - Later devices with a clock speed of over 2Ghz should also be set at 800Mhz - 1Ghz foreach 4 - 8 cores because the temperature limit is about 45-50 degrees Celsius. When it equipped with a cooling fan, the new configuration will be stable.
 
