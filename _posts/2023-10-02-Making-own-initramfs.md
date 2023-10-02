@@ -201,6 +201,7 @@ root # find . -print0 | cpio --null --create --verbose --format=newc > initramfs
 ```
 
 Reference links:
+
 https://wiki.gentoo.org/wiki/Initramfs
 
 https://wiki.gentoo.org/wiki/Initramfs_-_make_your_own
