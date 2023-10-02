@@ -204,6 +204,9 @@ The auto-generate initramfs tools from distro: dracut, mkinitcpio, initramfs-too
 
 Reference links:
 
+```
+...
+
 https://wiki.gentoo.org/wiki/Initramfs
 
 https://wiki.gentoo.org/wiki/Initramfs_-_make_your_own
@@ -211,3 +214,6 @@ https://wiki.gentoo.org/wiki/Initramfs_-_make_your_own
 https://gitlab.com/postmarketOS/pmaports/-/tree/master/main/postmarketos-initramfs?ref_type=heads
 
 https://github.com/Project-DragonPi/DragonRoot
+
+...
+```
