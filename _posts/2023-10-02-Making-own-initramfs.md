@@ -74,7 +74,7 @@ root # lddtree /sbin/switch_root
 
 Copy the libraries libmount.so.1, libblkid.so.1, libc.so.6 to folder /lib64. Do the same for busybox, findfs, switch_root
 
-Write the mount and rescue_shell functions in init_fuction.sh and declare them in init to use the functions. Everything added must be declared in the initram_list so the kernel knows and switch_root to real rootfs
+Write the mount and rescue_shell functions in init_fuction.sh and declare them in init to use the functions. Everything added must be declared in the initramfs.list so the kernel knows and switch_root to real rootfs
 
 ```
 ...
