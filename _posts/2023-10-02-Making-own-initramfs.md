@@ -3,7 +3,7 @@ layout: post
 category: linuxmobile
 ---
 
-Usually people reading Initramfs or initrd will immediately think it is the root filesytem. Actually it only runs temporarily after the kernel boots and resets PID 1, initrd does not load external modules, initramfs is a small filesystem that allows the kernel to show where to store real rootfs and firmware, the path to ext-modules
+Usually people reading Initramfs or initrd will immediately think it is the root file-sytem. Actually it only runs temporarily after the kernel boots and resets PID 1, initrd does not load external modules, initramfs is a small file-system that allows the kernel to show where to store real root file-system and firmware, the path to ext-modules
 
 Initrd is a ramdisk that supports booting and switching_root to the real root filesystem. Usually /sbin/initrd
 
