@@ -7,7 +7,7 @@ Usually people reading Initramfs or initrd will immediately think it is the root
 
 Initrd is a ramdisk that supports booting and switching_root to the real root filesystem. Usually /sbin/initrd
 
-Initramfs is a mini rootfs, so it will be created in the file initramfs.cpio.gz including initramfs.list (used to declare a list of files and directories running in initramfs), later it will also be separated into init_function.sh to save the files. The function is written in the init file, shortening the init. The initramfs.cpio.gz structure is as follows:
+Initramfs is a mini root file-system, so it will be created in the file initramfs.cpio.gz including initramfs.list (used to declare a list of files and directories running in initramfs), later it will also be separated into init_function.sh to save the files. The functions are written in the init file, shortening the init. The initramfs.cpio.gz structure is as follows:
 
 {% include image.html
             img="images/20230509_112432.jpg"
