@@ -18,13 +18,13 @@
                            {% assign images = post.content | split:"<img " %}
                            {% for image in images %}
                                 {% if image contains 'src' %}
-                                     {% if foundImage == 0 %}
+                                     
                                           {% assign html = image | split:"/>" | first %}
                                           <img class="card-img-top img-fluid rounded" {{ html }} />
                                           {% assign foundImage = foundImage | plus:1 %}
-                                     {% else %}
+                                     
                                           {% break %}
-                                     {% endif %}
+                                     
                                 {% endif %}
                            {% endfor %}
                         </div>
