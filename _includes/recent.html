@@ -21,6 +21,8 @@
                                      {% if foundImage == 0 %}
                                           {% assign html = image | split:"/>" | first %}
                                           <img class="card-img-top img-fluid rounded" {{ html }} />
+                                          {% assign foundImage = foundImage | plus:1 %}
+                                     {% else %}
                                           {% break %}
                                      {% endif %}
                                 {% endif %}
