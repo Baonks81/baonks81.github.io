@@ -4,7 +4,7 @@
       <div class="row g-0">
          {% assign countPost = 0 %}
              {% for post in site.posts %}
-               {% if countPost < 5 %}
+               {% if countPost < 6 %}
                  {% if page.title == post.title %}
                    {% assign forloop.index = forloop.index | plus:1 %}
                  {% else %}
