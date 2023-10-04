@@ -9,10 +9,9 @@
            {% else %}
              <div class="col-sm-12 col-md-6 col-lg-4 border-bottom bg-light">
                <div class="card w-100 h-100">
-                 <div class="card-header">
+                 <!-- <div class="card-header">
                    <a href="{{ post.url | relative_url }}">
-                     <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-                      <!-- <div class="image-responsive-widescreen inner">
+                      <div class="image-responsive-widescreen inner">
                          
                          {% assign images = post.content | split:"<img " %}
                          {% for image in images %}
@@ -24,12 +23,12 @@
                                    
                               {% endif %}
                          {% endfor %}
-                      </div> -->
+                      </div>
                    </a>
-                 </div>
+                 </div> -->
                  <div class="card-body flex-lg-shrink-1">
                    <div class="card-title">
-                      
+                      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
                       <div class="sub-cat text-truncate">
                          <span class="text-muted font-weight-lighter fst-italic">
                             <i class="far fa-calendar-alt"></i> {{ post.date | date: "%d %b %Y" }} - 
