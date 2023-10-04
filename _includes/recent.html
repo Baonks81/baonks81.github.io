@@ -9,7 +9,7 @@
              {% if page.title == post.title %}
                {% assign forloop.index = forloop.index | plus:1 %}
                {% assign equalindex = forloop.index %}
-             {% else %}
+             {% else %} {% if forloop.index >= equalindex %}
                 {% assign countPost = countPost | plus:1 %}
                 <div class="col-sm-12 col-md-6 col-lg-4 border-bottom bg-light">
                   <div class="card w-100 h-100">
@@ -50,6 +50,7 @@
                   </div>
                 </div>
              {% endif %}
+            {% endif %}
           {% else %}
                {% break %}
           {% endif %}
