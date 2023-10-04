@@ -40,7 +40,7 @@
                      </div>
                      <div class="text-left my-2">
                         <p class="card-text">
-                           {{ post.content | truncatewords:500 | strip_html }}
+                           {{ post.content | truncatewords:10 | strip_html }}
                            <a href="{{ post.url | relative_url  }}" class="text-my-own-color">more</a>
                         </p>
                      </div>
