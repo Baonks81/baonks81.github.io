@@ -4232,8 +4232,8 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  /* padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem; */
   margin-right: 1rem;
   font-size: 1.25rem;
   white-space: nowrap;
@@ -4265,7 +4265,7 @@ textarea.form-control-lg {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  /* padding: 0.25rem 0.75rem; */
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
