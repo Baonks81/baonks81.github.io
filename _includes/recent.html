@@ -2,7 +2,14 @@
   <h2>Recent Posts:</h2>
    <div class="container-fluid">
       <div class="row g-0">
-         {% for post in site.posts offset:1 limit:6 %} 
+        {% assign countPost = 1 %}
+        {% assign post = site.posts.first %}
+        {% for post in site.posts %}
+           {% if countPost < 7 %}
+             {% if page.title == post.title %}
+               {% assign forloop.index = forloop.index | plus:1 %}
+             {% else %}
+               {% assign countPost = countPost | plus:1 %}
                <div class="col-sm-12 col-md-6 col-lg-4 border-bottom bg-light">
                  <div class="card w-100 h-100">
                    <div class="card-header">
@@ -41,6 +48,10 @@
                    </div>
                  </div>
                </div>
+            {% endif %}
+           {% else %}
+                {% break %}
+           {% endif %}
          {% endfor %}
       </div>
    </div>
