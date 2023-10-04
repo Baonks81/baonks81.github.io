@@ -1,6 +1,46 @@
 <div class="content">
-  <h2>Recent Posts:</h2>
    <div class="container-fluid">
+     <h2>Latest Post:</h2>
+      <div class="row g-0">
+        {% for post in site.posts limit:1 %}
+          <div class="col border-bottom bg-light">
+            <div class="card w-100 h-100">
+              <div class="card-header">
+                <a href="{{ post.url | relative_url }}">
+                   <div class="image-responsive-widescreen inner">                           
+                      {% assign images = post.content | split:"<img " %}
+                      {% for image in images %}
+                           {% if image contains 'src' %}                                     
+                             {% assign html = image | split:"/>" | first %}
+                             <img class="card-img-top img-fluid rounded" {{ html }} />
+                             {% break %}                                     
+                           {% endif %}
+                      {% endfor %}
+                   </div>
+                </a>
+              </div>
+              <div class="card-body flex-lg-shrink-1">
+                <div class="card-title">
+                   <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                   <div class="sub-cat text-truncate">
+                      <span class="text-muted font-weight-lighter fst-italic">
+                         <i class="far fa-calendar-alt"></i> {{ post.date | date: "%d %b %Y" }} - 
+                         <i class="far fa-list-alt"></i> <a class="text-my-own-color" href="{{ site.url }}/{{ post.category }}">{{ post.category }}</a>
+                     </span>
+                   </div>
+                </div>
+                <div class="text-left my-2">
+                   <p class="card-text">
+                      {{ post.content | truncatewords:10 | strip_html }}
+                      <a href="{{ post.url | relative_url  }}" class="text-my-own-color">more</a>
+                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+     <h2>Recent Posts:</h2>
       <div class="row g-0">
         {% assign countPost = 1 %}
         {% assign post = site.posts.last %}
@@ -15,16 +55,13 @@
                   <div class="card w-100 h-100">
                     <div class="card-header">
                       <a href="{{ post.url | relative_url }}">
-                         <div class="image-responsive-widescreen inner">
-                           
+                         <div class="image-responsive-widescreen inner">                           
                             {% assign images = post.content | split:"<img " %}
                             {% for image in images %}
-                                 {% if image contains 'src' %}
-                                     
-                                           {% assign html = image | split:"/>" | first %}
-                                           <img class="card-img-top img-fluid rounded" {{ html }} />
-                                           {% break %}
-                                     
+                                 {% if image contains 'src' %}                                     
+                                   {% assign html = image | split:"/>" | first %}
+                                   <img class="card-img-top img-fluid rounded" {{ html }} />
+                                   {% break %}                                     
                                  {% endif %}
                             {% endfor %}
                          </div>
