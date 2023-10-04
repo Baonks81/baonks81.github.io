@@ -368,8 +368,8 @@ p {
 }
 
 .typing-demo {
-  width: 8ch;
-  animation: typing 1s steps(8), blink .5s step-end forwards alternate;
+  width: 9ch;
+  animation: typing 1s steps(9), blink .5s step-end forwards alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
