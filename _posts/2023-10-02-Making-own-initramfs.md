@@ -196,6 +196,8 @@ root # cd initramfs
 
 root # find . -print0 | cpio --null --create --verbose --format=newc > initramfs.cpio
 
+root # gzip --best initramfs.cpio > initramfs.cpio.gz
+
 ...
 ```
 
