@@ -3,7 +3,7 @@ layout: post
 category: bootstrap
 ---
 
-When I want to write an image slideshow for card on bootstrap-css-jekyll. You just need to think a little about how to assemble the available code for card demonstrations on YouTube, adjust the css to match the theme's structure, that's a quick way to create a personal blog, better than setting up a website. design a new layout.
+When I want to write an image slideshow for card on bootstrap-css-jekyll. You just need to think a little about how to assemble the available code for card demonstrations on YouTube, adjust the css to match the theme's structure, that's a quick way to create a personal blog, it's a better way than setting up website and designing new layout.
 
 {% include image.html
             img="images/jekyll-bootstrap.jpg"
