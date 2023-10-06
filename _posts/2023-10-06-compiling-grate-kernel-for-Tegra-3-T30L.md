@@ -25,7 +25,7 @@ $ make clean
 ```
 
 {% include image.html
-            img="images/grate-kernel.jpeg"
+            img="images/grate-kernel.jpg"
             title="Grate kernel"
             caption="Grate kernel" 
             url="https://github.com/grate-driver/linux" %}
