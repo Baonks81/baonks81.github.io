@@ -71,7 +71,7 @@ $ fastboot boot boot.img
 ```
 
 Note: n7 2012 grouper rev.E1565 when building zImage, boot.img or vmlinuz must have capacity < 3.5MB. When building with pmbootstrap integrated with initramfs, it must be < 6.9MB.
-Write your own [initramfs] to continue booting when the [grate-kernel] has reset PID 1.
+Writing your own [initramfs] to continue booting when the [grate-kernel] has reset PID 1.
 
 [initramfs]: https://baonks81.github.io/Making-own-initramfs/
 [grate-kernel]: https://github.com/grate-driver/grate/wiki/Using-the-grate-kernel
