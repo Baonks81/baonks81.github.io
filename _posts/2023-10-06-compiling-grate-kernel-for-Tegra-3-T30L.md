@@ -3,7 +3,7 @@ layout: post
 category: tegra 
 --- 
 
-Preparing softwares to compile the mainline kernel (grate-kernel)
+Preparing softwares to compile the mainline kernel (grate-kernel). Use git to get the linux kernel source code to your computer
 
 ```
 ...
@@ -13,6 +13,8 @@ $ sudo su
 # apt-get install build-essential git fakeroot ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison make crossbuild-essential-armhf gcc-arm-none-eabi gcc-arm-linux-gnueabihf libmpc-dev libgmp-dev mkbootimg
 # exit
 $ mkdir -p linux
+
+Grate-driver tegra kernel:
 $ git clone --depth=1 --branch master https://github.com/grate-driver/linux.git linux
 
 Clamor's transformer kernel:
@@ -38,6 +40,7 @@ $ make ARCH=arm CROSS_COMPILE=arm-none-eabi- menuconfig
 $ make ARCH=arm CROSS_COMPILE=arm-none-eabi- savedefconfig
 $ make clean
 
+Grate-driver tegra kernel:
 $ make ARCH=arm CROSS_COMPILE=arm-none-eabi- grate_defconfig pmos.config
 
 Clamor's transformer kernel:
