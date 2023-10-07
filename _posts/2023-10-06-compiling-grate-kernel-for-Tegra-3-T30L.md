@@ -3,7 +3,7 @@ layout: post
 category: tegra 
 --- 
 
-Preparing softwares to compile the mainline kernel (grate-kernel). Use git to get the linux kernel source code to your computer
+Preparing softwares to compile the mainline kernel (grate-kernel). Using git to get the linux kernel source code to your computer
 
 {% include image.html
             img="images/tegra3.jpg"
