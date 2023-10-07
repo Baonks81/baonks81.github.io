@@ -13,6 +13,6 @@ Specifically, when you select the 3rd post position, in the most recent post the
             caption="open-source template language"
             url="https://shopify.github.io/liquid/tags/iteration/" %}
 
-[Liquid] is an open source template language created by Shopify and written in Ruby. Almost identical to ASP, besides javascript on the website.
+[Liquid] is an open source template language created by Shopify and written in Ruby. It is the backbone of Shopify themes and is used to load dynamic content on storefronts. Almost identical to ASP, besides javascript on the website.
 
 [Liquid]: https://shopify.github.io/liquid/
