@@ -34,4 +34,7 @@ Reference links:
 
 [Project-DragonPi/DragonRoot]
 
+[Use PostmarketOS Community pre-built image on your device]
+
 [Project-DragonPi/DragonRoot]: https://github.com/Project-DragonPi/DragonRoot/blob/main/Makefile
+[Use PostmarketOS Community pre-built image on your device]: https://wiki.postmarketos.org/wiki/Use_PostmarketOS_Community_pre-built_image_on_your_device#insert_a_MicroSDcard_into_your_Computer
