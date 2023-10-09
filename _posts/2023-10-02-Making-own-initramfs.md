@@ -217,5 +217,7 @@ https://gitlab.com/postmarketOS/pmaports/-/tree/master/main/postmarketos-initram
 
 https://github.com/Project-DragonPi/DragonRoot
 
+http://www.aclevername.com/articles/linux-xilinx-tutorial/minimalist-initramfs.html
+
 ...
 ```
