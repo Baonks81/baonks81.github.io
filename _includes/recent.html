@@ -3,7 +3,7 @@
   <h2>Recent Posts:</h2>
    <div class="container-fluid">
       <div class="row g-0">
-        {% for post in paginator.posts %}
+        {% for post in site.posts %}
              {% if page.title == post.title %}
                {% assign forloop.index = forloop.index | plus:1 %}
                {% assign equalindex = forloop.index %}
