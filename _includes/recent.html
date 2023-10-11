@@ -3,9 +3,7 @@
   <h2>Recent Posts:</h2>
    <div class="container-fluid">
       <div class="row g-0">
-        {% assign countPost = 1 %}
-        {% for post in site.posts %}
-          {% if countPost < 7 %}
+        {% for post in paginator.posts %}
              {% if page.title == post.title %}
                {% assign forloop.index = forloop.index | plus:1 %}
                {% assign equalindex = forloop.index %}
@@ -49,10 +47,40 @@
                    </div>
                 {% endif %}
              {% endif %}
-          {% else %}
-               {% break %}
-          {% endif %}
         {% endfor %}
+
+         <!-- Pagination loading more content -->
+         {% if paginator.total_pages > 1 %}
+              <div class="pagination">
+                 {% if paginator.previous_page %}
+                      {% if paginator.page == 2 %}
+                           <a href="/">&laquo; Prev</a>
+                      {% else %}
+                           <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+                      {% endif %}    
+                 {% else %}
+                      <span>&laquo; Prev</span>
+                 {% endif %}
+
+                 {% if paginator.next_page %}
+                      <a class='next' href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+                 {% else %}
+                      <span class='next'>Next &raquo;</span>
+                 {% endif %}
+             </div>
+         {% endif %}
+          <!-- End Pagination -->
+          <a id='more' class='next' href="{{ paginator.next_page_path | relative_url }}">More</a>
       </div>
    </div>
 </div>
+
+<script type="text/javascript">
+// content selector is used to extract the additional items
+  $('#more').click(function() {
+                        $('.content').jscroll({
+                            contentSelector: ".content",
+                            nextSelector: '.next'
+                        });
+  });
+</script>
