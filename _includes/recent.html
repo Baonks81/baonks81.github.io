@@ -3,12 +3,15 @@
   <h2>Recent Posts:</h2>
    <div class="container-fluid">
       <div class="row g-0">
+        {% assign countPost = 1 %}
         {% for post in site.posts %}
+          {% if countPost < 7 %}
              {% if page.title == post.title %}
                {% assign forloop.index = forloop.index | plus:1 %}
                {% assign equalindex = forloop.index %}
              {% else %} 
                 {% if forloop.index >= equalindex %}
+                   {% assign countPost = countPost | plus:1 %}
                    <div class="col-sm-12 col-md-6 col-lg-4 border-bottom bg-light">
                      <div class="card w-100 h-100">
                        <div>
@@ -46,36 +49,10 @@
                    </div>
                 {% endif %}
              {% endif %}
+          {% else %}
+               {% break %}
+          {% endif %}
         {% endfor %}
-         <!-- Pagination loading more content -->
-         {% if paginator.total_pages > 1 %}
-              <div class="pagination">
-                 {% if paginator.previous_page %}
-                      {% if paginator.page == 2 %}
-                           <a href="/">&laquo; Prev</a>
-                      {% else %}
-                           <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
-                      {% endif %}    
-                 {% else %}
-                      <span>&laquo; Prev</span>
-                 {% endif %}
-                 {% if paginator.next_page %}
-                      <a class='next' href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-                 {% else %}
-                      <span class='next'>Next &raquo;</span>
-                 {% endif %}
-             </div>
-         {% endif %}
-          <!-- End Pagination -->
       </div>
    </div>
 </div>
-<script type="text/javascript">
-// content selector is used to extract the additional items
-
-$('.content').jscroll({
-    contentSelector: ".content",
-    nextSelector: '.next'
-});
-
-</script>
