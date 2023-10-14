@@ -46,6 +46,16 @@
     
     <!-- Footer -->
     {%- include footer.html -%}
-
+    
+    <script>
+      $(".loadMoreCol").slice(0, 6).show();
+      $(".loadMore").on("click",function(){
+        $(".loadMoreCol:hidden").slice(0, 6).show();
+    
+        if($(".loadMoreCol:hidden").length == 0) {
+          $(".loadMore").fadeOut();
+        }
+      });
+    </script>
   </body>
 </html>
