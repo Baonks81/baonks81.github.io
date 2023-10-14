@@ -421,6 +421,24 @@ p {
   color: inherit;
 }
 
+.loadMore.show-loader {
+  width: 52px;
+  background-color: var(--light-color);
+  text-indent: -9999px;
+}
+
+.loadMore.show-loader .loading {
+  display: block;
+}
+
+.loadMore.loaded {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: visibility .3s 3s, opacity .3s 3s, height .3s 3s;
+  text-indent: -9999px;
+}
+
 .loadMoreCol {
   display: none;
 }
