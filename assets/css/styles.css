@@ -402,6 +402,10 @@ p {
   transform: scale(1.5);
 }
 
+.loadMore {
+  justify-content: center;
+}
+
 .loadMoreCol {
   display: none;
 }
