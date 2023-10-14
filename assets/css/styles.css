@@ -406,6 +406,10 @@ p {
   display: none;
 }
 
+.loadMoreCol:hidden {
+  display: flex;
+}
+
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
