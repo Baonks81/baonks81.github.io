@@ -8,7 +8,7 @@
              {% assign equalindex = forloop.index %}
            {% else %} 
               {% if forloop.index >= equalindex %}
-                 <div class="col-sm-12 col-md-6 col-lg-4 border-bottom bg-light">
+                 <div class="col-sm-12 col-md-6 col-lg-4 border-bottom bg-light loadMoreCol">
                    <div class="card w-100 h-100">
                      <div>
                        <a href="{{ post.url | relative_url }}">
@@ -95,14 +95,3 @@
       </div>
    </div>
 </div>
-
-<script>
-  $(".loadMoreCol").slice(0, 6).show();
-  $(".loadMore").on("click",function(){
-    $(".loadMoreCol:hidden").slice(0, 6).show();
-
-    if($(".loadMoreCol:hidden").length == 0) {
-      $(".loadMore").fadeOut();
-    }
-  });
-</script>
