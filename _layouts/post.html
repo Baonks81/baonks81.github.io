@@ -49,12 +49,16 @@
     
     <script>
       $(".loadMoreCol").slice(0, 6).show();
-      $(".loadMore").on("click",function(){
-        $(".loadMoreCol:hidden").slice(0, 6).show();
-    
+      $(".loadMore").addEventListener("click", {e} => {
+        e.target.classlist.add('show-loader');
+        setTimeout(function() {
+          e.target.classlist.remove('show-loader');
+          $(".loadMoreCol:hidden").slice(0, 6).show();
+        }, 3000)
+
+        // hide load button after full load
         if($(".loadMoreCol:hidden").length == 0) {
-          $(".loadMore").fadeOut();
-          $(".loadMoreDiv").fadeOut();
+          event.target.classlist.add('loaded');
         }
       });
     </script>
