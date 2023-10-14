@@ -50,16 +50,19 @@
     <script>
       $(".loadMoreCol").slice(0, 6).show();
       $(".loadMore").on("click",function(){
-        $(".loadMoreCol:hidden").slice(0, 6).show();
+        $(".loadMoreCol:hidden").slice(0, 6).slideDown('slow');
 
         if($(".loadMoreCol:hidden").length == 0) {
-          $(".loadMore").fadeOut();
-          $(".loadMoreDiv").fadeOut();
+          $(".loadMore").fadeOut('slow');
+          $(".loadMoreDiv").fadeOut('slow');
         }
+        $(html,body).animate({
+          scrollTop: $(this).offset.top
+        },1500);
       });
       if($(".loadMoreCol").length <= 6) {
-          $(".loadMore").fadeOut();
-          $(".loadMoreDiv").fadeOut();
+          $(".loadMore").fadeOut('slow');
+          $(".loadMoreDiv").fadeOut('slow');
       }
     </script>
   </body>
