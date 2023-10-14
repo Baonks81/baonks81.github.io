@@ -406,37 +406,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  width: 180px;
-  height: 52px;
-  text-transform: uppercase;
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  margin: 0 auto;
-  transition: all .3s ease-out;
 }
 
 .loadMore:hover {
   background-color: var(--light-color);
   color: inherit;
-}
-
-.loadMore.show-loader {
-  width: 52px;
-  background-color: var(--light-color);
-  text-indent: -9999px;
-}
-
-.loadMore.show-loader .loading {
-  display: block;
-}
-
-.loadMore.loaded {
-  visibility: hidden;
-  opacity: 0;
-  height: 0;
-  transition: visibility .3s 3s, opacity .3s 3s, height .3s 3s;
-  text-indent: -9999px;
 }
 
 .loadMoreCol {
@@ -445,74 +419,6 @@ p {
 
 .loadMoreCol:hidden {
   display: flex;
-}
-
-/*! loader */
-
-.loading {
-  display: none;
-  width: 32px;
-  height: 32px;
-  magin: 0 auto;
-  animation: loader1 3s linear infinite;
-}
-
-@keyframe loader1 {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
-
-.loading span {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 32px;
-  height: 32px;
-  clip: rect(16px, 32px, 32px, 0);
-  animation: loader2 1.5s cubic-bizier(0.77, 0, 0.175, 1) infinite;
-}
-
-@keyframe loader2 {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
-
-.loading span::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 32px;
-  height: 32px;
-  border: 3px solid transparent;
-  border-top: 3px solid var(--white-color);
-  border-radius: 50%;
-  animation: loader3 1.5s cubic-bizier(0.77, 0, 0.175, 1) infinite;
-}
-
-@keyframe loader3 {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
-
-.loading span::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 32px;
-  height: 32px;
-  border: 3px solid var(--primary-color);
-  border-radius: 50%;
 }
 
 abbr[title],
