@@ -56,8 +56,8 @@
           $(".loadMore").fadeOut('slow');
           $(".loadMoreDiv").fadeOut('slow');
         }
-        $(html,body).animate({
-          scrollTop: $(this).offset.top
+        $('html,body').animate({
+          scrollTop: $(this).offset().top
         },1500);
       });
       if($(".loadMoreCol").length <= 6) {
