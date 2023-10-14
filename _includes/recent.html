@@ -97,5 +97,8 @@
 </div>
 
 <script>
-  $(".loadMoreCol").slide(0, 6).show();
+  $(".loadMoreCol").slice(0, 6).show();
+  $(".loadMore").on("click", function(){
+    $(".loadMoreCol:hidden").slice(0, 6).show();
+  })
 </script>
