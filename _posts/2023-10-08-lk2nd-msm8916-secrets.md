@@ -3,7 +3,7 @@ layout: post
 category: lk2nd
 ---
 
-When I learned about mainline kernel running on mobile chipsets, I used tegra on gr-driver. Previously tegra on nexus 7 2012 grouper in kernel 3.1.10 (downstream) had Dualboot Android and GNU/Linux via MultiROM, basically patching kexec to kernel 3.1.10 to boot another kernel, so Ubuntu on Nexus 7 2012 Again using kernel 3.1.10 -8-28.
+When I learned about mainline kernel running on mobile chipsets, I used tegra on grate-driver. Previously tegra on nexus 7 2012 grouper in kernel 3.1.10 (downstream) had Dualboot Android and GNU/Linux via MultiROM, basically patching kexec to kernel 3.1.10 to boot another kernel, so Ubuntu on Nexus 7 2012 Again using kernel 3.1.10 -8-28.
 
 {% include image.html
             img="images/qualcomm-snapdragon-410-msm8916.jpg"
