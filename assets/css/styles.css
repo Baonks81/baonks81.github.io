@@ -11489,7 +11489,7 @@ blockquote {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -83px;
-    transition: transform 0.5s;
+    transition: transform 1s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.9);
   }
