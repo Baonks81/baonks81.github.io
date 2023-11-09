@@ -219,5 +219,7 @@ https://github.com/Project-DragonPi/DragonRoot
 
 http://www.aclevername.com/articles/linux-xilinx-tutorial/minimalist-initramfs.html
 
+https://github.com/Baonks81/TegraRoot
+
 ...
 ```
