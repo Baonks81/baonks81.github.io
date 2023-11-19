@@ -2,9 +2,9 @@
 	{% when 'Categories' %}
           	<header class="masthead" style="--background-image-lazy: url({{ 'assets/images/category-bg.jpg' | relative_url }}); background-image: var(--background-image-lazy);">
 	{% when 'Project' %}
-		<header class="masthead" style="background-image: url({{ 'assets/images/subtitle-bg.jpg' | relative_url }})">
+		<header class="masthead" style="--background-image-lazy: url({{ 'assets/images/subtitle-bg.jpg' | relative_url }}); background-image: var(--background-image-lazy);">
 	{% else %}
-		<header class="masthead" style="background-image: url({{ 'assets/images/home-bg.jpg' | relative_url }})">
+		<header class="masthead" style="--background-image-lazy: url({{ 'assets/images/home-bg.jpg' | relative_url }}); background-image: var(--background-image-lazy);">
 {% endcase %}
   <div class="container position-relative px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
