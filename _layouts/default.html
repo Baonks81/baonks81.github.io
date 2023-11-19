@@ -6,7 +6,8 @@
 
   <body>
 
-    <div class="loader"></div>
+    <!-- Pre-loader -->
+    {% include loader.html %}
     
     <!-- Navigation -->
     {% include navigation.html %}
@@ -28,18 +29,6 @@
 
     <!-- Footer -->
     {% include footer.html %}
-    
-    <script type="text/javascript">
-        window.addEventListener("load", () => {
-          const loader = document.querySelector(".loader");
-        
-          loader.classList.add("loader--hidden");
-        
-          loader.addEventListener("transitionend", () => {
-            document.body.removeChild(loader);
-          });
-        });
-    </script>
     
   </body>
 </html>
