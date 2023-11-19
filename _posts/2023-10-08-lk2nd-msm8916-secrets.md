@@ -28,7 +28,7 @@ Dualboot operation:
 3. Go back to postmarketOS, perform steps 1, return to Android and perform step 2.
 
 
-{% include youtube.html id='FwSHqQsFxLU' %}
+{% include youtube.html id='FwSHqQsFxLU?si=UH4KeYmhgvmj6Hr1' %}
 
 Reference links: 
 
