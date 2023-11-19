@@ -429,6 +429,7 @@ p {
   width: 100vw;
   height: 100vh;
   display: flex;
+  z-index: 9999;
   align-items: center;
   justify-content: center;
   background: #333333;
