@@ -1,6 +1,6 @@
 {% case page.subtitle %}
 	{% when 'Categories' %}
-          	<header class="masthead" style="background-image: url({{ 'assets/images/category-bg.jpg' | relative_url }})">
+          	<header class="masthead" style="--background-image-lazy: url({{ 'assets/images/category-bg.jpg' | relative_url }}); background-image: var(--background-image-lazy);">
 	{% when 'Project' %}
 		<header class="masthead" style="background-image: url({{ 'assets/images/subtitle-bg.jpg' | relative_url }})">
 	{% else %}
