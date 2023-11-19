@@ -54,6 +54,9 @@ window.addEventListener("load", () => {
   loader.classList.add("loader--hidden");
 
   loader.addEventListener("transitionend", () => {
-    document.body.removeChild(loader);
+    const myNode = document.getElementById("commonPreloader");
+    while (myNode.firstChild) {
+        myNode.removeChild(myNode.lastChild);
+    }  
   });
 });
