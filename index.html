@@ -78,7 +78,7 @@ subheading: A Tech Pages
                                                {% if image contains 'src' %}
                                                     {% if foundImage == 0 %}
                                                          {% assign html = image | split:"/>" | first %}
-                                                         <img class="card-img-top img-fluid rounded" {{ html }} />
+                                                         <img class="card-img-top img-fluid rounded" {{ html }} loading="lazy" />
                                                          {% break %}
                                                     {% endif %}
                                                {% endif %}
