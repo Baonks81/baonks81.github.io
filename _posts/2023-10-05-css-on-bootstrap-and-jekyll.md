@@ -12,4 +12,4 @@ When I want to write an image slideshow for card on bootstrap-css-jekyll. You ju
 
 There are many ways to adjust a layout, as you can see on YouTube below, adjusting the css makes the movement go in a different direction, accidentally it becomes a new tweak compared to the original instructions of the video author.
 
-{% include youtube.html id='3RvQJX1_fKQ' %}
+{% include youtube.html id='3RvQJX1_fKQ?si=QD39u8AvrW8FW5DN' %}
