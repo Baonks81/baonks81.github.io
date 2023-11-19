@@ -32,4 +32,4 @@ The tablet run GNU/Linux distros fine now. I'm using to wrote my github.io blog.
 DE: i3gaps, MATE.
 Tools: jekyll, git, vim, nano
 &nbsp;
-{% include youtube.html id='it-JM-GkJxw' %}
+{% include youtube.html id='it-JM-GkJxw?si=2LWLar0hC3sYslgr' %}
