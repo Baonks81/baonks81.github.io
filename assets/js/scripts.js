@@ -53,8 +53,8 @@ window.addEventListener("load", () => {
 
   loader.classList.add("loader--hidden");
 
-  loader.addEventListener("transitionend", () => {
-    $("#commonPreloader").removeClass("loader");
-  });
 });
 
+$(document).ready(function() {
+    $("#commonPreloader").removeClass();
+});
