@@ -29,7 +29,7 @@ Tracking from part 1 to part 3 is the test of hardware functions, part 4 is an e
 
 This is also a way to change and test the new kernel on Nexus 7 2012 grouper rev. E1565 runs ubuntu MATE or ArchLinux, openSUSE, although the change is manual. Now it is possible to write code that describes how to do it automatically.
 
-{% include youtube.html id='igH0r4iQ3w4' %}
+{% include youtube.html id='igH0r4iQ3w4?si=o1m3lHMhORBdvkob' %}
 
 [Martijn Braam's blog]: https://blog.brixit.nl/
 [Part 1]: https://blog.brixit.nl/automated-phone-testing-pt-1/
