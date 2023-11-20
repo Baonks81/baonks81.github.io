@@ -1,5 +1,5 @@
 <!-- _includes/image.html -->
-<div class="image-wrapper box blur-load" style="background-image: url(images/gray_background.jpg)">
+<div class="image-wrapper box blur-load" style="background-image: url({{ 'images/gray_background.jpg' | relative_url }})">
     {% if include.url %}
         <a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
     {% endif %}
