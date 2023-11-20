@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 mainNav.classList.add('fixed-top');
                 // mainNav.classList.add('is-visible');
             } else {
-                console.log(123);
+                /// console.log(123);
                 mainNav.classList.remove('fixed-top', 'is-fixed');
             }
         } else {
