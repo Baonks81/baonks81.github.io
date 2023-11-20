@@ -461,6 +461,15 @@ p {
 }
 /*! End Pre-loader*/
 
+/*! Blur image*/
+
+.blur-load {
+  background-size: cover;
+  background-position: center;
+}
+
+/*! End Blur image*/
+
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
