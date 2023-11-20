@@ -20,7 +20,7 @@ subheading: A Tech Pages
                               <div class="card flex-md-row d-flex align-items-md-center">
                                  <div class="w-100 h-100">
                                     <a href="{{ post.url | relative_url }}">
-                                       <div class="image-responsive-first inner blur-load" style="background-image: url({{ 'images/gray_background.jpg' | relative_url }})">
+                                       <div class="image-responsive-first inner">
                  {% when 2 %}
                       {% if post == site.posts.last %}
                            <div class="col-sm-6 col-md-12 col-lg-12 border-bottom bg-light">
@@ -30,7 +30,7 @@ subheading: A Tech Pages
                               <div class="card w-100 h-100">
                                  <div>
                                     <a href="{{ post.url | relative_url }}">
-                                       <div class="image-responsive-widescreen inner blur-load" style="background-image: url({{ 'images/gray_background.jpg' | relative_url }})">
+                                       <div class="image-responsive-widescreen inner">
                  {% when 3 %}
                       {% if post == site.posts.last %}
                            <div class="col-sm-12 col-md-6 col-lg-8 border-bottom bg-light">
@@ -40,7 +40,7 @@ subheading: A Tech Pages
                               <div class="card w-100 h-100">
                                  <div>
                                     <a href="{{ post.url | relative_url }}">
-                                       <div class="image-responsive-widescreen inner blur-load" style="background-image: url({{ 'images/gray_background.jpg' | relative_url }})">
+                                       <div class="image-responsive-widescreen inner">
                  {% when 5 %}
                       {% if post == site.posts.last %}
                            <div class="col-sm-12 col-md-6 col-lg-12 border-bottom bg-light">
@@ -50,7 +50,7 @@ subheading: A Tech Pages
                               <div class="card w-100 h-100"> <!-- md-5 shadow-sm -->
                                  <div>
                                     <a href="{{ post.url | relative_url }}">
-                                       <div class="image-responsive-widescreen inner blur-load" style="background-image: url({{ 'images/gray_background.jpg' | relative_url }})">
+                                       <div class="image-responsive-widescreen inner">
                  {% when 6 %}
                       {% if post == site.posts.last %}
                            <div class="col-sm-6 col-md-12 col-lg-6 border-bottom bg-light">
@@ -60,7 +60,7 @@ subheading: A Tech Pages
                               <div class="card w-100 h-100">
                                  <div>
                                     <a href="{{ post.url | relative_url }}">
-                                       <div class="image-responsive-widescreen inner blur-load" style="background-image: url({{ 'images/gray_background.jpg' | relative_url }})">
+                                       <div class="image-responsive-widescreen inner">
                  {% else %}
                       {% if post == site.posts.last %}
                            <div class="col-sm-6 col-md-12 col-lg-4 border-bottom bg-light">
@@ -70,7 +70,7 @@ subheading: A Tech Pages
                               <div class="card w-100 h-100">
                                  <div>
                                     <a href="{{ post.url | relative_url }}">
-                                       <div class="image-responsive-widescreen inner blur-load" style="background-image: url({{ 'images/gray_background.jpg' | relative_url }})">
+                                       <div class="image-responsive-widescreen inner">
             {% endcase %}
                                           {% assign foundImage = 0 %}
                                           {% assign images = post.content | split:"<img " %}
