@@ -61,15 +61,3 @@ window.addEventListener("load", () => {
       }
   });
 });
-
-const containers = document.getElementById('containers');
-const contactBtn = document.getElementById('contact');
-const aboutBtn = document.getElementById('about');
-
-registerBtn.addEventListener('click', () => {
-    containers.classList.add("active");
-});
-
-loginBtn.addEventListener('click', () => {
-    containers.classList.remove("active");
-});
