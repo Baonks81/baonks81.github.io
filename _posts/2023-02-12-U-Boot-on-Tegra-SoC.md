@@ -29,11 +29,17 @@ How to build U-Boot on Tegra has no specific instructions, can only refer to bui
 
 # git clone https://github.com/clamor-s/u-boot/
 
-# make grouper_E1564.config ← new version rev.E1565
+# export CROSS_COMPILE=arm-none-eabi-
+
+# make transformer_t30_defconfig grouper_E1565.config ← new version rev.E1565
 
 or:
 
-# make grouper_PM269.config ← old version rev.PM269
+# make transformer_t30_defconfig grouper_PM269.config ← old version rev.PM269
+
+or:
+
+# make transformer_t30_defconfig tilapia.config
 
 # make
 
